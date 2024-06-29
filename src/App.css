@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('./normalize.css');
+*------------------------- NAVBAR ------------------------- */ 
+.navBar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.logo {
+  width: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbarList{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
 }
+
+.navbarList li {
+  margin-right: 60px; /* Adjust spacing between items */
+}
+
+.navBar :last-child {
+  margin-right: 0;
+}
+
+.navbarList a {
+  color: #2B2B2B; /* Change link color */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Ensures the link container is relatively positioned */
+}
+
+.navbarList a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust based on your design */
+  width: 0%;
+  height: 1px;
+  background-color: #2B2B2B;
+  transition: width 0.3s ease-in-out; /* Animation transition */
+}
+
+.navbarList a:hover::after {
+  width: 100%; /* Expand width on hover */
+}
+/*------------------------- /NAVBAR ------------------------- */ 
+
+.homeHeader {
+  font-size: 5rem;
+  text-align: right;
+}
+
+/* Remove margin from the last item */
+/* .navbarList li:last-child {
+  margin-right: 0; 
+} */
+
+
+/*------------------------- HOME ------------------------- */ 
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.homeHeader {
+  font-size: 6rem;
+  text-align: right;
+  line-height: 5.5rem;
+}
+/*------------------------- /HOME ------------------------- */ 
+
