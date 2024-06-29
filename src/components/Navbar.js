@@ -1,5 +1,6 @@
 import React from 'react'
 import d_logo from '../assets/icons/d_logo.svg'
+import '../navbar.css'
 
 
 function Navbar() {

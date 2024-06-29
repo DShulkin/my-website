@@ -1,0 +1,46 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 25px;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+.navbarList li {
+  margin-right: 60px; /* Adjust spacing between items */
+}
+
+.navbarList li:last-child {
+  margin-right: 0;
+}
+
+.navbarList a {
+  color: #2B2B2B; /* Change link color */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Ensures the link container is relatively positioned */
+}
+
+.navbarList a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust based on your design */
+  width: 0%;
+  height: 1px;
+  background-color: #2B2B2B;
+  transition: width 0.3s ease-in-out; /* Animation transition */
+}
+
+.navbarList a:hover::after {
+  width: 100%; /* Expand width on hover */
+}
