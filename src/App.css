@@ -1,3 +1,12 @@
+/* .mainContainer {
+  padding: 30px;
+} */
+
+
+/* font-size: clamp(2rem, 10vw + 1rem, 5rem);
+line-height: clamp(2.5rem, 6vw + 1.8rem, 4.5rem); */
+
+
 /*------------------------- HOME ------------------------- */ 
 #home {
   height: 100vh;
@@ -7,8 +16,36 @@
 }
 
 .homeHeader {
-  font-size: 6rem;
+  font-size: 4rem;
+  line-height: 3.5rem;
   text-align: right;
-  line-height: 5.5rem;
+  animation: slideUp .8s ease forwards;
+  opacity: 0;
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*------------------------- /HOME ------------------------- */ 
+
+@media (min-width: 768px) {
+  #home {
+    height: 100vh;
+  }
+
+  .homeHeader {
+    font-size: 6rem;
+    text-align: right;
+    line-height: 5.3rem;
+    margin: 0;
+    padding-bottom: 37px;
+  }
+}

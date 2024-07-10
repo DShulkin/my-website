@@ -6,9 +6,9 @@ function Home() {
      <h1 className="homeHeader">
       <span aria-label="creative">CRTV</span> <br />
       <span aria-label="developer">DVLPR</span> <br />
-        BASED IN <br/> 
-        INDIANAPOLIS
-      </h1> 
+      <span>BASED IN </span><br/> 
+      <span>INDIANAPOLIS</span>
+     </h1> 
     </section>
   )
 }
