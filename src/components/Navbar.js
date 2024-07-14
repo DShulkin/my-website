@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import d_logo from '../assets/icons/d_logo.svg';
-import hamburgerMenu_offBlack from '../assets/icons/hamburgerMenu_offBlack.svg';
-import '../Navbar.css';
+import React, { useState } from 'react'
+import d_logo from '../assets/icons/d_logo.svg'
+import hamburgerMenu_offBlack from '../assets/icons/hamburgerMenu_offBlack.svg'
+import '../Navbar.css'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
