@@ -8,11 +8,11 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
+  }
 
   const closeMenu = () => {
     setIsOpen(false);
-  };
+  }
 
   return (
     <nav className="navBar">
@@ -34,4 +34,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar
