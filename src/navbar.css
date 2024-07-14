@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px; */
   position: sticky;
-  top: 0;
+  top: 20px;
   z-index: 1000; /* Ensure the navBar is on top of other content */
 }
 
@@ -18,11 +17,13 @@
   justify-content: flex-end;  
   align-items: center;
   list-style-type: none;
+  margin: 0;
   position: absolute; /* Position the menu absolutely */
   top: 60px; /* Adjust based on your header height */
   right: 10px; /* Adjust based on your padding */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add shadow for better visibility */
-  padding: 10px;
+  padding: 10px; /* Add padding for spacing */
+  z-index: 999; /* Ensure the dropdown menu is above other content */
 }
 
 .navbarList li {
@@ -30,21 +31,15 @@
 }
 
 .navbarList a {
-  color: #2B2B2B; /* Change link color */
   text-decoration: none; /* Remove underline */
   position: relative; /* Ensures the link container is relatively positioned */
 }
 
 .hamburger {
-  display: none;
+  display: block;
   width: 24px;
   cursor: pointer;
 }
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
 
   .navbarList {
     display: none;
@@ -55,7 +50,7 @@
   .navbarList.open {
     display: flex;
   }
-}
+
 
 /*------------------------- 768 Media Query ------------------------- */
 @media (min-width: 768px) {
@@ -63,6 +58,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .navbarList {
@@ -87,11 +86,11 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px; /* Adjust based on your design */
+    bottom: -6px; /* line dinstance under link */
     width: 0%;
     height: 1px;
     background-color: #2B2B2B;
-    transition: width 0.3s ease-in-out; /* Animation transition */
+    transition: width 0.3s ease-in-out; 
   }
 
   .navbarList a:hover::after {

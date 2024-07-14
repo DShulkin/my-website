@@ -3,25 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Apply font stacks */
-body {
-  margin: 0;
-  font-family: 'Mulish', sans-serif; /* Use Quattrocento Sans for body */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Quattrocento Sans', sans-serif; 
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  color: #313131;
-}
 
 #root {
   background-color: #FAFAFA;
+  padding: 0 15px;
 }
 /* 
 background-color: #E2E2E3; */
 /* background-color: #ededed; */
 /* background-color: #f0f0f0; */
+
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif; /* Use Mulish for body */
+  color: #313131; /* Set default text color */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p, a {
+  color: inherit; /* Inherit the color from the body */
+}
