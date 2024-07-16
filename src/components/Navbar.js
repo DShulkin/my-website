@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import d_logo from '../assets/icons/d_logo.svg'
 import hamburgerMenu_offBlack from '../assets/icons/hamburgerMenu_offBlack.svg'
-import '../Navbar.css'
+import '../navbar.css'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="navBar">
+    <nav className="navbar">
       <div className="logo">
         <img src={d_logo} alt="D Logo" />
       </div>
