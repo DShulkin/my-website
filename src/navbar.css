@@ -54,10 +54,12 @@
 
 /*------------------------- 768 Media Query ------------------------- */
 @media (min-width: 768px) {
-  .navBar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
+    top: 0;
   }
 
   .hamburger {
