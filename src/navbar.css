@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15px;
   position: sticky;
-  padding: 15px 0;
-  /* top: 20px; */
   z-index: 1000; /* Ensure the navBar is on top of other content */
+  background-color: #FAFAFA;
+  top: 0;
 }
 
 .logo {
@@ -59,7 +60,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
   }
 
   .hamburger {

@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <>
+    <div class="mainContainer">
       <Navbar />
       <div className="allSections">
         <Home />
@@ -15,7 +15,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-    </>
+    </div>
   )
 }
 
