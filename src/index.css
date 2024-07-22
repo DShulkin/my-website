@@ -16,6 +16,7 @@ background-color: #E2E2E3; */
 body {
   margin: 0;
   font-family: 'Mulish', sans-serif; /* Use Mulish for body */
+  background-color: #FAFAFA;
   color: #313131; /* Set default text color */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

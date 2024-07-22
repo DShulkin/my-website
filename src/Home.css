@@ -48,9 +48,9 @@
     padding: 0 30px 0 30px;
   }
 
-  #home {
-    height: 93.5vh;
-  }
+  /* #home {
+    height: 93vh;
+  } */
 
   .homeHeader {
     font-size: 6.3rem;
@@ -62,6 +62,10 @@
 
 /*------------------------- /HOME ------------------------- */ 
 
-/* @media (min-width: 1028px) {
+@media (min-width: 1028px) {
+  
+  /* #home {
+    height: 94.5vh;
+  } */
 
-} */
+}
