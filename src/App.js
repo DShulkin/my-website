@@ -7,15 +7,13 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div class="mainContainer">
+    <>
       <Navbar />
-      <div className="allSections">
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
-    </div>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   )
 }
 
