@@ -80,6 +80,7 @@
 
 .drawer li a {
   text-decoration: none;
+  font-weight: 500;
 }
 
 /*------------------------- 768 Media Query ------------------------- */
