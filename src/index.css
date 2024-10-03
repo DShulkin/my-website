@@ -1,6 +1,10 @@
 @import url('./normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); */
 
 /* Apply font stacks */
 /* 
@@ -9,9 +13,9 @@ background-color: #E2E2E3; */
 /* background-color: #f0f0f0; */
 /* color: #2B2B2B; */
 
-body {
+body, p, a {
   margin: 0;
-  font-family: 'Mulish', sans-serif; /* Use Mulish for body */
+  font-family: "Inter", sans-serif;
   background-color: #FAFAFA;
   color: #313131; /* Set default text color */
   -webkit-font-smoothing: antialiased;
@@ -19,9 +23,49 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
 }
 
-p, a {
-  color: inherit; /* Inherit the color from the body */
+@font-face {
+  font-family: 'StaraBlack';
+  src: url('/public/fonts/stara-black.woff2') format('woff2'),
+       url('/public/fonts/stara-black.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
 }
+
+@font-face {
+  font-family: 'StaraExtBd';
+  src: url('/public/fonts/stara-extrabold.woff2') format('woff2'),
+       url('/public/fonts/stara-extrabold.woff') format('woff');   
+  font-style: normal;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraBold';
+  src: url('/public/fonts/stara-bold.woff2') format('woff2'),
+       url('/public/fonts/stara-bold.woff') format('woff');
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraSemBd';
+  src: url('/public/fonts/stara-semibold.woff2') format('woff2'),
+       url('/public/fonts/stara-semibold.woff') format('woff');
+  font-weight: 600; 
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraMed';
+  src: url('/public/fonts/stara-medium.woff2') format('woff2'),
+       url('/public/fonts/stara-medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
