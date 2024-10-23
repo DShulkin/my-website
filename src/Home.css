@@ -9,27 +9,52 @@
 }
 
 body {
-  padding: 0 15px 0 15px;
+  margin: 0 30px 0 30px;
 }
 
 /*------------------------- HOME ------------------------- */ 
+
+/* #home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    gap: 24px;
+    margin: 0 auto;
+    height: calc(var(--vh, 1vh)* 100 - 60px);
+
+} */
+       /* max-width: 1200px; */
+
 #home {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
   height: calc(var(--vh, 1vh)* 100 - 60px);
 }
 
 .homeHeader {
-  font-size: clamp(13px, 24vw, 13vw);
-  line-height: clamp(13px, 11.5vw, 14vw);
-  text-align: right;
+
+  /* font-size: clamp(3.5rem, 12.5vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14vw); */
+
+  /* font-size: clamp(13px, 11.85vw, 13vw);
+  line-height: clamp(13px, 11vw, 14vw); */
+
+  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3.5rem, 12vw, 16rem); */
+
+  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14vw); */
+
+  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 12vw, 16rem); */
+
+  font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14rem);
   margin: 0;
   animation: slideUp .8s ease forwards;
   opacity: 0; 
-    /* font-size: 13vw;
-  line-height: 11vw; */
+  align-self: end
 }
+
 
 @keyframes slideUp {
   0% {
@@ -47,49 +72,54 @@ body {
 @media (min-width: 768px) {
 
   #home {
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
+  .first-half {
+    display: block;
+    text-align: right;
+    }
+  
+  .second-half {
+    display: block;
+    text-align: right;
+  }
+  
+
   .homeHeader {
-      /* max-width: 1100px; */
-    margin: 0 auto;
+      /* max-width: 960px; */
+    /* margin: 0 auto; */
+  }
+
+  /* .homeHeader {
+    font-size: 6.3rem;
+      line-height: 5.5rem; 
+  } */
+}
+
+/*------------------------- /HOME ------------------------- */ 
+
+@media (min-width: 1028px) {
+  
+  .homeHeader {
+    font-size: 7.3rem;
+    line-height: 6.5rem;
+    /* max-width: 1700px; */
   }
 
   .first-half {
     display: block;
     text-align: left;
     }
-    
-    /* .second-half {
+  
+  .second-half {
     display: block;
     text-align: right;
-    }  */
-
-
-  /* body {
-    padding: 0 30px 0 30px;
-  } */
-
-  /* #home {
-    height: 93vh;
-  } */
-
-  .homeHeader {
-    font-size: 6.3rem;
-    line-height: 5.5rem;
   }
 }
 
 
-/*------------------------- /HOME ------------------------- */ 
-
-@media (min-width: 1028px) {
-  
-  /* #home {
-    height: 94.5vh;
-  } */
-
-}
 
 
 
