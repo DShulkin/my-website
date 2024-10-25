@@ -13,18 +13,6 @@ background-color: #E2E2E3; */
 /* background-color: #f0f0f0; */
 /* color: #2B2B2B; */
 
-body, p, a {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #FAFAFA;
-  color: #313131; /* Set default text color */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
-}
 
 @font-face {
   font-family: 'StaraBlack';
@@ -56,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'StaraSemBd';
   src: url('/public/fonts/stara-semibold.woff2') format('woff2'),
        url('/public/fonts/stara-semibold.woff') format('woff');
+  font-style: normal;
   font-weight: 600; 
   text-rendering: optimizeLegibility;
 }
@@ -69,3 +58,23 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
+body, p, a {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  /* background-color: #FAFAFA; */
+  /* color: #313131;  */ /* Set default text color */
+  background-color : #f1f1f1;
+  color: #010101;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'StaraSemBd', 'Quattrocento Sans', sans-serif;
+}
+
+/* h1 {
+  font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14rem);
+  margin: 0;
+} */

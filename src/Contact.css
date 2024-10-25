@@ -1,0 +1,10 @@
+.contact-header {
+    width: 100%;               /* Full width of the screen */
+    border-bottom: 2px solid #000;  /* Underline */
+    padding-bottom: 10px;       /* Optional: Space between text and border */
+  }
+  
+  h1 {
+    margin: 0;                  /* Remove default margin */
+    display: inline-block;      /* Ensure h1 behaves well with text-align */
+  }
