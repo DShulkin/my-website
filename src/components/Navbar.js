@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import d_logo from '../assets/icons/d_logo.svg'
-import hamburgerMenu_offBlack from '../assets/icons/hamburgerMenu_offBlack.svg'
+import hamburgerMenu from '../assets/icons/hamburgerMenu.svg'
 import '../navbar.css'
 
 function Navbar() {
@@ -36,7 +36,7 @@ function Navbar() {
         </div>
         
         <div className="hamburger" onClick={toggleDrawer}>
-          <img src={hamburgerMenu_offBlack} alt="Hamburger Menu" />
+          <img src={hamburgerMenu} alt="Hamburger Menu" />
         </div>
 
         <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>

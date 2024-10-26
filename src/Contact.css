@@ -1,10 +1,52 @@
 .contact-header {
-    width: 100%;               /* Full width of the screen */
+    width: 100%;              
     border-bottom: 2px solid #000;  /* Underline */
-    padding-bottom: 10px;       /* Optional: Space between text and border */
+    padding-bottom: 10px;       /* Space between text and border */
+    font-size: clamp(2.75rem, 11vw, 12.92vw);
+    line-height: clamp(3rem, 11vw, 14rem);
+    margin: 0;
+  }
+
+
+  .social-icon-container {
+    display: flex;
+    gap: 24px;
+    align-self: end;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    margin-top: 20px;
   }
   
-  h1 {
-    margin: 0;                  /* Remove default margin */
-    display: inline-block;      /* Ensure h1 behaves well with text-align */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    height: 64vw; /*CHANGE THIS */
   }
+  
+  .contact-info {
+    grid-column: 1 / 2; /* Aligns with the first column */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .social-icon {
+    grid-column: 2 / 3; /* Aligns with the second column */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 24px;
+  }
+  
+  button {
+    grid-column: 3 / 4; /* Aligns with the third column */
+    justify-self: start;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
