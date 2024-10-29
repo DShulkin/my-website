@@ -33,7 +33,7 @@
 
 .input-group {
   flex-direction: column;
-  height: 64vw; /*CHANGE THIS */
+  /* height: 64vw;  */
 }
 
 .contact-info {
