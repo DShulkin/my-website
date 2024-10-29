@@ -112,13 +112,16 @@ function Contact() {
           </svg>
       </div>
 
-        {/* <div className="social-icons">
-          <img src={gitHubIcon} alt="GitHub" />
-          <img src={linkedinIcon} alt="LinkedIn" />
-          <img src={instagramIcon} alt="Instagram" />
-        </div> */}
-
-        <button type="submit">Submit</button>
+        <button className="submit-button" type="submit">Submit
+          <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 90.25 28.23"
+            fill="currentColor"
+            className="arrow"
+          >
+            <polygon points="76.13 0 74.01 2.12 84.51 12.62 0 12.62 0 15.62 84.51 15.62 74.01 26.12 76.13 28.23 90.25 14.12 76.13 0"/>
+          </svg>
+        </button>
       </form>
 
     </section>
