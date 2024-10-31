@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 100vh
+  height: 91vh
 }
 
 .contact-header {
@@ -18,8 +18,6 @@
     display: flex;
   }
 
-  .contact-info,
-  .social-icon-container,
   .submit-button {
     display: flex;
     place-self: end start;
@@ -27,24 +25,14 @@
 
 .form-grid {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-auto-rows: max-content;
+  align-content: space-between;
   gap: 32px;
 }
 
 .input-group {
   flex-direction: column;
   /* height: 64vw;  */
-}
-
-.contact-info {
-  flex-direction: column;
-  gap: 5px;
-}
-
-.social-icon-container {
-  flex-direction: row;
-  gap: 24px;
-  height: 24px;
 }
 
 
@@ -96,6 +84,7 @@
     .submit-button {
       grid-column: 3 / 4; /* Aligns with the third column */
       grid-row: 2 / 3;
+      /* grid-row: 2 / 4; */
       /* justify-self: start; */
       cursor: pointer;
     }

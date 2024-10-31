@@ -1,0 +1,27 @@
+#footer {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+
+  .social-icon-container {
+    display: flex;
+    flex-direction: row;
+    place-self: end start;
+    gap: 24px;
+    height: 20px;
+  }
+
+  @media (min-width: 768px) { 
+
+    #footer {
+      grid-template-columns: 1fr 1fr 2fr;
+      gap: 0 32px;
+    }
+  }
