@@ -6,16 +6,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 40px 0;
   position: sticky;
   z-index: 1000; /* Ensure the navBar is on top of other content */
   /* background-color: #FAFAFA; */
   background-color : #f1f1f1;
   top: 0;
+  border-bottom: 2px solid #010101;
+}
+
+.navbar li a {
+  font-family: 'StaraMed', 'Quattrocento Sans', sans-serif;
+  font-size: 20px;
 }
 
 .logo img {
-  width: 25px;
+  width: 28px;
 }
 
 .navbarList {

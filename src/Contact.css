@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 91vh
+  height: 79vh
 }
 
 .contact-header {
@@ -25,9 +25,17 @@
 
 .form-grid {
   display: grid;
-  grid-auto-rows: max-content;
+  grid-template-rows: .5fr .5fr 1.5fr 1.5fr 3fr;
+  /* grid-template-rows: .5fr .5fr 1.5fr 1.5fr 1.5fr; */
+  /* grid-template-rows: 1fr 1fr 1fr 2fr 3fr; */
   align-content: space-between;
   gap: 32px;
+}
+
+
+input, textarea {
+  background: none;
+  border: none;
 }
 
 .input-group {
@@ -63,6 +71,7 @@
     
     .form-grid {
       grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 1fr auto;
       /* align-items: start; */
       /* margin-top: 20px; */
     }

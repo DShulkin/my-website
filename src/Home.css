@@ -1,12 +1,13 @@
-:root {
-  --vh: 1vh; /* Fallback value */
-}
+/* Fallback value */
+/* :root {
+  --vh: 1vh; 
+} */
 
-@supports (height: 100dvh) {
+/* @supports (height: 100dvh) {
   :root {
-    --vh: 1dvh; /* Use dvh if supported */
+    --vh: 1dvh; 
   }
-}
+} */
 
 body {
   margin: 0 30px 30px 30px;
@@ -27,7 +28,8 @@ body {
 
 #home {
   display: flex;
-  height: calc(var(--vh, 1vh)* 100 - 60px);
+    height: 88vh;
+  /* height: calc(var(--vh, 1vh)* 100 - 60px); */
 }
 
 .homeHeader {
