@@ -7,7 +7,7 @@
 
 .contact-header {
     width: 100%;              
-    border-bottom: 2px solid #000;  /* Underline */
+    border-bottom: 2px solid #010101;  /* Underline */
     padding-bottom: 10px;       /* Space between text and border */
     font-size: clamp(2.75rem, 11vw, 12.92vw);
     line-height: clamp(3rem, 11vw, 14rem);
@@ -45,6 +45,7 @@ input, textarea {
 
 
 .submit-button {
+  color : inherit;
   flex-direction: row;
   gap: 16px;
   align-items: baseline;
