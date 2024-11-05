@@ -14,15 +14,6 @@
     margin: 0;
   }
 
-  .input-group {
-    display: flex;
-  }
-
-  .submit-button {
-    display: flex;
-    place-self: end start;
-  }
-
 .form-grid {
   display: grid;
   grid-template-rows: .5fr .5fr 1.5fr 1.5fr 3fr;
@@ -32,17 +23,33 @@
   gap: 32px;
 }
 
+textarea {
+  width: 100%;
+  max-width: 450px;
+  min-height: 500px;
+  height: auto;
+}
+
 
 input, textarea {
   background: none;
+  padding-left: 0;
   border: none;
+  color: #757575;
 }
 
 .input-group {
+  display: flex;
   flex-direction: column;
   /* height: 64vw;  */
 }
 
+input:focus,
+textarea:focus {
+  outline: none; /* Removes the outline entirely */
+  background-color: transparent; /* Removes background */
+  color: #757575;
+}
 
 .submit-button {
   color : inherit;
@@ -53,6 +60,11 @@ input, textarea {
   border: none;
   grid-row: 4;
     /* align-items: center; */
+}
+
+.submit-button {
+  display: flex;
+  place-self: end start;
 }
 
 .arrow {
@@ -77,9 +89,9 @@ input, textarea {
       /* margin-top: 20px; */
     }
     
-    .input-group {
+    /* .input-group {
 
-    }
+    } */
     
     .contact-info {
       grid-column: 1 / 2;
@@ -99,3 +111,4 @@ input, textarea {
       cursor: pointer;
     }
   }
+  

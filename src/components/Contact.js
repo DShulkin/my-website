@@ -6,13 +6,13 @@ function Contact() {
     name: '',
     email: '',
     message: '',
-  });
+  })
 
   // Handle input field changes and update form data state
   const handleChange = (e) => {
     const { name, value } = e.target; // Extract name and value from the input attributes
     setFormData((prevData) => ({ ...prevData, [name]: value }))
-  };
+  }
 
   
 
@@ -21,7 +21,7 @@ function Contact() {
     e.preventDefault();
     const { name, message } = formData; // Use only name for the subject
 
-    // Construct mailto link with only the message in the body
+    // mailto link
     const mailtoLink = `mailto:davidshulkin93@gmail.com?subject=From: ${name} - Sent via davidshulkin.io&body=${encodeURIComponent(
       message
     )}`
@@ -42,7 +42,9 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
+            maxLength={32}
             required
+            // autoFocus
           />
         </div>
 
@@ -54,7 +56,8 @@ function Contact() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your name"
+            placeholder="Enter your email"
+            maxLength={32}
             required
           />
         </div>
