@@ -14,13 +14,15 @@ function Contact() {
     setFormData((prevData) => ({ ...prevData, [name]: value }))
   };
 
+  
+
   // Handle form submission and open email client with pre-filled email
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, message } = formData; // Use only name for the subject
 
     // Construct mailto link with only the message in the body
-    const mailtoLink = `mailto:davidshulkin93@gmail.com?subject=Message from ${name} - Sent via davidshulkin.io&body=${encodeURIComponent(
+    const mailtoLink = `mailto:davidshulkin93@gmail.com?subject=From: ${name} - Sent via davidshulkin.io&body=${encodeURIComponent(
       message
     )}`
     window.location.href = mailtoLink; // Open email client with the pre-filled email
@@ -50,7 +52,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            value={formData.name}
+            value={formData.email}
             onChange={handleChange}
             placeholder="Enter your name"
             required

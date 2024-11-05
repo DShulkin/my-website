@@ -6,13 +6,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 16px 0;
+  /* padding-top: 15px; */
+  padding: 24px 0;
+  /* padding: 15px 0; */
+  /* padding: 0 0 16px 0; */
   position: sticky;
   z-index: 1000; /* Ensure the navBar is on top of other content */
   /* background-color: #FAFAFA; */
   background-color : #f1f1f1;
   top: 0;
-  border-bottom: 2px solid #010101;
 }
 
 .navbar li a {
@@ -101,7 +103,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
   }
 
   .hamburger {
@@ -135,7 +136,7 @@
     left: 0;
     bottom: -6px; /* line distance under link */
     width: 0%;
-    height: 1px;
+    height: 1.75px;
     background-color: #2B2B2B;
     transition: width 0.3s ease-in-out; 
   }
@@ -146,3 +147,16 @@
   }
 }
 /*------------------------- /768 Media Query ------------------------- */
+
+@media (min-width: 1028px) {
+
+  .navbar li a {
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 32px 0;
+    border-bottom: 2px solid #010101;
+  }
+
+}
