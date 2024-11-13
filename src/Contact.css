@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 79vh
+  height: 81vh
 }
 
 .contact-header {
@@ -16,18 +16,13 @@
 
 .form-grid {
   display: grid;
-  grid-template-rows: .5fr .5fr 1.5fr 1.5fr 3fr;
+  /* grid-template-rows: .5fr .5fr 1.5fr 1.5fr 3fr; */
   /* grid-template-rows: .5fr .5fr 1.5fr 1.5fr 1.5fr; */
   /* grid-template-rows: 1fr 1fr 1fr 2fr 3fr; */
+  /* grid-template-rows: .5fr .5fr .5fr 2fr 4fr; */
+  grid-template-rows: 1fr 1fr 3fr 4fr;
   align-content: space-between;
-  gap: 32px;
-}
-
-textarea {
-  width: 100%;
-  max-width: 450px;
-  min-height: 500px;
-  height: auto;
+  /* gap: 32px; */
 }
 
 
@@ -51,6 +46,11 @@ textarea:focus {
   color: #757575;
 }
 
+#message {
+  width: 100%;
+  height: 150px;
+}
+
 .submit-button {
   color : inherit;
   flex-direction: row;
@@ -59,12 +59,13 @@ textarea:focus {
   background: none;
   border: none;
   grid-row: 4;
+  padding: 0;
     /* align-items: center; */
 }
 
 .submit-button {
   display: flex;
-  place-self: end start;
+  place-self: start;
 }
 
 .arrow {
@@ -73,17 +74,27 @@ textarea:focus {
 
 
 
-
-
-
-
-
-
-
   @media (min-width: 768px) {
+
+    #contact {
+      height: 86vh
+    }
+
+    .contact-header {
+      padding-top: 48px;
+    }
     
+    .submit-button {
+      cursor: pointer;
+    }
+  }
+  
+
+  @media (min-width: 1024px) {
+
     .form-grid {
-      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 1.25fr;
+      /* grid-template-columns: .75fr .75fr 1.25fr; */
       grid-template-rows: 1fr auto;
       /* align-items: start; */
       /* margin-top: 20px; */

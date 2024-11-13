@@ -1,6 +1,6 @@
 #footer {
   display: grid;
-  gap: 24px;
+  gap: 16px;
 }
 
 .contact-info {
@@ -23,7 +23,14 @@
   @media (min-width: 768px) { 
 
     #footer {
-      grid-template-columns: 1fr 1fr 2fr;
-      gap: 0 32px;
+      grid-template-columns: 1fr 1fr 1.25fr;
+      /* grid-template-columns: .75fr .75fr 1.25fr; */
+    }
+  }
+
+  @media (min-width: 1024px) { 
+
+    #footer {
+      gap: 0;
     }
   }
