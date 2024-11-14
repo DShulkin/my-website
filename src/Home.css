@@ -33,6 +33,13 @@ body {
 }
 
 .homeHeader {
+  font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14rem);
+  margin: 0;
+  animation: slideUp .8s ease forwards;
+  opacity: 0; 
+  align-self: end
+}
 
   /* font-size: clamp(3.5rem, 12.5vw, 12.92vw);
   line-height: clamp(3rem, 11vw, 14vw); */
@@ -48,14 +55,6 @@ body {
 
   /* font-size: clamp(2.75rem, 11vw, 12.92vw);
   line-height: clamp(3rem, 12vw, 16rem); */
-
-  font-size: clamp(2.75rem, 11vw, 12.92vw);
-  line-height: clamp(3rem, 11vw, 14rem);
-  margin: 0;
-  animation: slideUp .8s ease forwards;
-  opacity: 0; 
-  align-self: end
-}
 
 
 @keyframes slideUp {
@@ -107,7 +106,7 @@ body {
 
 /*------------------------- /HOME ------------------------- */ 
 
-@media (min-width: 1028px) {
+@media (min-width: 1024px) {
 
   body {
     padding: 0 80px 40px 80px;

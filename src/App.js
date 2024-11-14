@@ -13,8 +13,10 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <Contact />
-      <Footer />
+      <div className="contact-footer-container">
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }
