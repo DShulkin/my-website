@@ -31,6 +31,18 @@
   @media (min-width: 1024px) { 
 
     #footer {
+      display: grid;
+      gap: 16px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
       gap: 0;
+      grid-auto-flow: row; /* Explicitly manage row layout in absolute context */
     }
   }
+
+
+
+
+  

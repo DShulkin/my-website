@@ -79,6 +79,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 } */
 
-.contact-footer-container {
+/* .contact-footer-container {
   display: grid;
+} */
+
+
+@media (min-width: 1024px) {  
+
+  .contact-footer-container {
+    display: grid;
+    grid-template-rows: auto; /* Let the rows adjust based on their content */
+    align-items: end; /* Align the second row to the baseline of the first */
+    position: relative; /* Set up for positioning adjustment if needed */
+  }
+
+  .contact-footer-container > *:last-child {
+    grid-row: 1; /* Place the last child (Footer) in the same grid row as Contact */
+    align-self: end; /* Align Footer to the baseline of Contact */
+  }
+
+
 }
