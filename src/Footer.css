@@ -11,7 +11,6 @@
     grid-row: 2 / 2; 
   }
 
-
   .social-icon-container {
     display: flex;
     flex-direction: row;
@@ -24,7 +23,6 @@
 
     #footer {
       grid-template-columns: 1fr 1fr 1.25fr;
-      /* grid-template-columns: .75fr .75fr 1.25fr; */
     }
   }
 
@@ -32,13 +30,12 @@
 
     #footer {
       display: grid;
-      gap: 16px;
+      gap: 0;
+      grid-auto-flow: row; /* Explicitly manage row layout in absolute context */
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
-      gap: 0;
-      grid-auto-flow: row; /* Explicitly manage row layout in absolute context */
     }
   }
 
