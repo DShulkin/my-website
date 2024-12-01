@@ -19,23 +19,25 @@
     height: 20px;
   }
 
-  @media (min-width: 768px) { 
+  /* @media (min-width: 768px) { 
 
     #footer {
-      grid-template-columns: 1fr 1fr 1.25fr;
+
     }
-  }
+  } */
 
   @media (min-width: 1024px) { 
 
     #footer {
       display: grid;
       gap: 0;
+      grid-template-columns: 1fr 1fr 1.25fr;
       grid-auto-flow: row; /* Explicitly manage row layout in absolute context */
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
+      z-index: 1;
     }
   }
 

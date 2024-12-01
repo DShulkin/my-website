@@ -2,20 +2,20 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 81vh
+  height: 81vh;
 }
 
 .contact-header {
-    grid-row: 1 / 2;
-    width: 100%;              
-    border-bottom: 2px solid #010101;  /* Underline */
-    padding-bottom: 10px;       /* Space between text and border */
-    font-size: clamp(2.75rem, 11vw, 12.92vw);
-    line-height: clamp(3rem, 11vw, 14rem);
-    margin: 0;
+  grid-row: 1 / 2;
+  width: 100%;              
+  border-bottom: 2px solid #010101;  /* Underline */
+  padding-bottom: 10px;       /* Space between text and border */
+  font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14rem);
+  margin: 0;
   }
 
-.form-grid {
+.form-grid {  
   display: grid;
   grid-template-rows: 1fr 1fr 3fr 4fr;
   align-content: space-between;
@@ -27,6 +27,7 @@ input, textarea {
   padding-left: 0;
   border: none;
   color: #757575;
+  resize: none;
 }
 
 input:focus,
@@ -118,6 +119,11 @@ textarea:focus {
       grid-row: 2 / 3;
       place-self: end start;
       cursor: pointer;
+      z-index: 2;
+    }
+
+    .input-group {
+      width: 50%;
     }
   }
   

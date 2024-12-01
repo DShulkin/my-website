@@ -14,7 +14,7 @@ function App() {
       <About />
       <Projects />
       <div className="contact-footer-container">
-        <Contact />
+        <Contact/>
         <Footer />
       </div>
     </>
