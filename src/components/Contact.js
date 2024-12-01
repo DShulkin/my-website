@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Contact.css'
 
-function Contact({contactForm}) {
+function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -32,7 +32,7 @@ function Contact({contactForm}) {
     <section id="contact">
       <h1 className="contact-header">Contact</h1>
 
-      <form onSubmit={handleSubmit} ref={contactForm} className="form-grid">
+      <form onSubmit={handleSubmit} className="form-grid">
         <div className="input-group">
           <label htmlFor="name">Name</label>
           <input
