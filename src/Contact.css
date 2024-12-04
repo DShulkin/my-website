@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 81vh;
+  height: 74vh;
 }
 
 .contact-header {
@@ -10,8 +10,10 @@
   width: 100%;              
   border-bottom: 2px solid #010101;  /* Underline */
   padding-bottom: 10px;       /* Space between text and border */
-  font-size: clamp(2.75rem, 11vw, 12.92vw);
-  line-height: clamp(3rem, 11vw, 14rem);
+  /* font-size: clamp(2.75rem, 11vw, 15rem);
+  line-height: clamp(3rem, 11vw, 14rem); */
+  font-size: clamp(2.75rem, 9vw, 9rem);
+  line-height: clamp(2.4rem, 8vw, 8rem);
   margin: 0;
   }
 
@@ -75,15 +77,20 @@ textarea:focus {
   @media (min-width: 768px) {
 
     #contact {
-      height: 86vh;
+      height: 84vh;
     }
 
     .contact-header {
-      font-size: 7.3rem;
-      line-height: 6.5rem;
+      /* font-size: 7.3rem;
+      line-height: 6.5rem; */
       padding-top: 48px;
       text-transform: uppercase;
     }
+
+    .form-grid .input-group:nth-child(3) {
+      width: 64%; 
+    }
+    
     
     .submit-button {
       cursor: pointer;
@@ -96,11 +103,16 @@ textarea:focus {
 
     #contact {
       height: 92vh;
+      max-width: 2100px;
     }
 
     .form-grid {
       grid-template-columns: 1fr 1fr 1.25fr;
       grid-template-rows: 1fr 1fr;
+    }
+
+    .form-grid .input-group:nth-child(3) {
+      width:70%; 
     }
     
     .contact-info {
