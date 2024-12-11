@@ -24,37 +24,15 @@
 
 #home {
   display: flex;
-    height: 85vh;
+  height: 85vh;
   /* height: calc(var(--vh, 1vh)* 100 - 60px); */
 }
 
 .homeHeader {
-  /* font-size: clamp(2.75rem, 11vw, 12.92vw); */
-  /* font-size: clamp(2.75rem, 11vw, 15rem);
-  line-height: clamp(3rem, 11vw, 14rem); */
-  font-size: clamp(2.75rem, 9vw, 9rem);
-  line-height: clamp(2.4rem, 8vw, 8rem);
-  margin: 0;
   animation: slideUp .8s ease forwards;
   opacity: 0; 
   align-self: end
 }
-
-  /* font-size: clamp(3.5rem, 12.5vw, 12.92vw);
-  line-height: clamp(3rem, 11vw, 14vw); */
-
-  /* font-size: clamp(13px, 11.85vw, 13vw);
-  line-height: clamp(13px, 11vw, 14vw); */
-
-  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
-  line-height: clamp(3.5rem, 12vw, 16rem); */
-
-  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
-  line-height: clamp(3rem, 11vw, 14vw); */
-
-  /* font-size: clamp(2.75rem, 11vw, 12.92vw);
-  line-height: clamp(3rem, 12vw, 16rem); */
-
 
 @keyframes slideUp {
   0% {
