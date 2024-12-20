@@ -1,3 +1,12 @@
+## env setup
+before getting started 
+```bash
+cp nodemailer-backend/.env.template nodemailer-backend/.env
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
