@@ -14,18 +14,27 @@ function Contact() {
     setFormData((prevData) => ({ ...prevData, [name]: value }))
   }
 
-  
-
-  // Handle form submission and open email client with pre-filled email
-  const handleSubmit = (e) => {
+  // Handle form submission and send data to the server
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, message } = formData; // Use only name for the subject
 
-    // mailto link
-    const mailtoLink = `mailto:davidshulkin93@gmail.com?subject=From: ${name} - Sent via davidshulkin.io&body=${encodeURIComponent(
-      message
-    )}`
-    window.location.href = mailtoLink; // Open email client with the pre-filled email
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!')
+        setFormData({ name: '', email: '', message: '' }) // Reset the form
+      } else {
+        alert('Failed to send the message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      alert('An error occurred. Please try again later.')
+    }
   }
 
   return (

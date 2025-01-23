@@ -45,7 +45,6 @@ app.post('/send-email', (req, res) => {
     replyTo: email,
   }
   
-
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Error details:', error) // Log detailed error information
