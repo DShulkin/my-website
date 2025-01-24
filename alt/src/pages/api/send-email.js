@@ -1,15 +1,5 @@
-const express = require('express')
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const nodemailer = require('nodemailer')
-const bodyParser = require('body-parser')
-const cors = require('cors')
-require('dotenv').config()
-
-const app = express()
-const PORT = process.env.PORT || 5000
-
-// Middleware
-app.use(cors())
-app.use(bodyParser.json())
 
 // Nodemailer Transporter
 const transporter = nodemailer.createTransport({
@@ -31,11 +21,8 @@ transporter.verify((error, success) => {
   }
 })
 
-// Route to handle email sending
-app.post('/send-email', (req, res) => {
-  console.log('Received request body:', req.body)
-
-  const { name, email, message } = req.body
+export default function handler(req, res) {
+  const { name, email, message } = req.body 
 
   const mailOptions = {
     from: email,
@@ -53,12 +40,4 @@ app.post('/send-email', (req, res) => {
     console.log('Email sent:', info.response) // Log success details
     res.status(200).json({ message: 'Email sent successfully' })
   })
-})
-
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`)
-})
-
-console.log('Email:', process.env.EMAIL)
-console.log('Password:', process.env.EMAIL_PASSWORD ? 'Loaded' : 'Missing')
+}

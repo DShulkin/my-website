@@ -1,0 +1,162 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 15px; */
+  padding: 24px 0;
+  /* padding: 15px 0; */
+  /* padding: 0 0 16px 0; */
+  position: sticky;
+  z-index: 1000; /* Ensure the navBar is on top of other content */
+  /* background-color: #FAFAFA; */
+  background-color : #f1f1f1;
+  top: 0;
+}
+
+.navbar li a {
+  font-family: 'StaraMed', 'Quattrocento Sans', sans-serif;
+}
+
+.logo img {
+  width: 24px;
+}
+
+.navbarList {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  position: absolute; /* Position the menu absolutely */
+  top: 60px; /* Adjust based on your header height */
+  right: 10px; /* Adjust based on your padding */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add shadow for better visibility */
+  padding: 10px; /* Add padding for spacing */
+  z-index: 999; /* Ensure the dropdown menu is above other content */
+}
+
+.navbarList li {
+  /* margin: 10px 0;  */
+}
+
+.navbarList a {
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Ensures the link container is relatively positioned */
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure the hamburger button is above the drawer */
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially hidden off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.drawer.open {
+  right: 0; /* Move into view */
+}
+
+.drawer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.drawer li {
+  /* margin: 20px 0; */
+}
+
+.drawer li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/*------------------------- 768 Media Query ------------------------- */
+@media (min-width: 768px) {
+
+  .navbar li a {
+    font-size: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbarList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    /* margin: 10px 0; */
+    padding: 0;
+    position: static; /* Reset position for desktop view */
+    box-shadow: none; /* Remove shadow for desktop view */
+    
+  }
+
+  .navbarList li {
+    margin-right: 60px; /* Adjust spacing between items */
+  }
+
+  .navbarList li:last-child {
+    margin-right: 0;
+  }
+
+  .navbarList a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px; /* line distance under link */
+    width: 0%;
+    height: 1.75px;
+    background-color: #2B2B2B;
+    transition: width 0.3s ease-in-out; 
+  }
+
+  .navbarList a:hover::after {
+    width: 100%; /* Expand width on hover */
+    
+  }
+}
+/*------------------------- /768 Media Query ------------------------- */
+
+@media (min-width: 1028px) {
+
+  .navbar li a {
+    font-size: 20px;
+  }
+
+  /* .navbar {
+    padding: 32px 0;
+    border-bottom: 2px solid #010101;
+  } */
+
+}

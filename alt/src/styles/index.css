@@ -1,0 +1,128 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+
+/* Apply font stacks */
+/* 
+background-color: #E2E2E3; */
+/* background-color: #ededed; */
+/* background-color: #f0f0f0; */
+/* color: #2B2B2B; */
+
+
+@font-face {
+  font-family: 'StaraBlack';
+  src: url('/public/fonts/stara-black.woff2') format('woff2'),
+       url('/public/fonts/stara-black.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraExtBd';
+  src: url('/fonts/stara-extrabold.woff2') format('woff2'),
+       url('/fonts/stara-extrabold.woff') format('woff');   
+  font-style: normal;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraBold';
+  src: url('/fonts/stara-bold.woff2') format('woff2'),
+       url('/fonts/stara-bold.woff') format('woff');
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraSemBd';
+  src: url('/fonts/stara-semibold.woff2') format('woff2'),
+       url('/fonts/stara-semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600; 
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraMed';
+  src: url('/fonts/stara-medium.woff2') format('woff2'),
+       url('/fonts/stara-medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  padding: 0 20px 15px 20px;
+}
+
+
+body, p, a {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  /* background-color: #FAFAFA; */
+  /* color: #313131;  */ /* Set default text color */
+  background-color : #f1f1f1;
+  color: #010101;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
+}
+
+/* h1 {
+  font-size: clamp(2.75rem, 9vw, 9rem);
+  line-height: clamp(2.4rem, 8vw, 8rem);
+  text-transform: uppercase;
+} */
+
+/* h1 {
+  font-size: clamp(2.75rem, 11vw, 12.92vw);
+  line-height: clamp(3rem, 11vw, 14rem);
+  margin: 0;
+} */
+
+h1 {
+  /* font-size: clamp(3.15rem, 9vw, 9rem);
+  line-height: clamp(3rem, 8vw, 8rem); */
+  font-size: clamp(2.75rem, 9vw, 9rem);
+  line-height: clamp(2.4rem, 8vw, 8rem);
+  text-transform: uppercase;
+  /* margin: 0; */
+}
+
+
+@media (min-width: 768px) {
+
+  body {
+    padding: 0 40px 30px 40px;
+  }
+}
+
+
+@media (min-width: 1024px) {  
+
+  body {
+    padding: 0 80px 40px 80px;
+  }
+
+  .contact-footer-container {
+    display: grid;
+    grid-template-rows: auto; /* Let the rows adjust based on their content */
+    align-items: end; /* Align the second row to the baseline of the first */
+    position: relative; /* Set up for positioning adjustment if needed */
+  }
+
+  .contact-footer-container > *:last-child {
+    grid-row: 1; /* Place the last child (Footer) in the same grid row as Contact */
+    align-self: end; /* Align Footer to the baseline of Contact */
+  }
+}
