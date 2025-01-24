@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import d_logo from '../assets/icons/d_logo.svg'
-import hamburgerMenu from '../assets/icons/hamburgerMenu.svg'
-import '../navbar.css'
+import d_logo from '@/assets/icons/d_logo.svg'
+import hamburgerMenu from '@/assets/icons/hamburgerMenu.svg'
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
   const toggleDrawer = () => {
     if (!drawerOpen) { // When the drawer is closed (!drawerOpen is true), the function adds the no-scroll 
       document.body.classList.add('no-scroll')
@@ -32,11 +30,11 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-          <img src={d_logo} alt="D Logo" />
+          <img {...d_logo} alt="D Logo" />
         </div>
         
         <div className="hamburger" onClick={toggleDrawer}>
-          <img src={hamburgerMenu} alt="Hamburger Menu" />
+          <img {...hamburgerMenu} alt="Hamburger Menu" />
         </div>
 
         <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>
