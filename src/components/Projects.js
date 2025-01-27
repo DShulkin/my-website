@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import projectsData from '@/projects.json';
+import projectsData from '@/projects.json'
 
 function Projects() {
   const [openIndex, setOpenIndex] = useState(null)
