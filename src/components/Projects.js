@@ -13,13 +13,13 @@ function Projects() {
         <div className="accordion-container">
           {projectsData.projects.map((project) => {
             const isOpen = project.id === openIndex // if the index matches openIndex its true, if not, false.
-
+            
             return (
               <div className="accordion-item" key={project.id}> 
                   <button
                   className="accordion-header"
                   aria-expanded={isOpen} // comes out to true or false - aria-expanded={false}
-                  aria-controls={`accordion-content ${project.id}`} // can be read as: aria-controls="accordion-content 2"
+                  aria-controls={`accordion-content-${project.id}`} // can be read as: aria-controls="accordion-content 2"
                   onClick={() => handleToggle(project.id)}
                   >
                     <h2 className="accordion-title">{project.title}</h2>  

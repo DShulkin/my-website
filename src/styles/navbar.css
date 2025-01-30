@@ -138,7 +138,7 @@
     width: 0%;
     height: 1.75px;
     background-color: #2B2B2B;
-    transition: width 0.3s ease-in-out; 
+    transition: width 0.22s ease-in-out; 
   }
 
   .navbarList a:hover::after {
