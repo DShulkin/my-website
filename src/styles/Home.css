@@ -29,7 +29,6 @@
 }
 
 .homeHeader {
-  /* font-size: clamp(2.75rem, 9vw, 9rem); */
   animation: slideUp .8s ease forwards;
   opacity: 0; 
   align-self: end;
