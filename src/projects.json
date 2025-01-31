@@ -12,17 +12,17 @@
     },
     {
       "id": 3, 
-      "title": "03  /  GAME SHOW APPLICATION",
+      "title": "03  /  Game Show Application",
       "content": "Curabitur id urna vitae magna euismod fermentum. Vestibulum eu erat at massa efficitur vestibulum. Quisque fringilla consequat facilisis."
     },
     {
       "id": 4, 
-      "title": "04  /  TIC TAC TOE GAME",
+      "title": "04  /  Tic Tac Toe Game",
       "content": "Sed id arcu varius, sollicitudin arcu non, feugiat mi. Maecenas vitae sem at justo tempus dapibus. Nam tincidunt libero at malesuada finibus."
     },
     {
       "id": 5, 
-      "title": "05  /  BOOTSTRAP SITE",
+      "title": "05  /  Boostrap Site",
       "content": "Proin nec dui molestie, dignissim lorem non, ultrices enim. Nulla facilisi. Quisque vitae purus consequat, pretium sapien eget, finibus odio."
     }
   ]

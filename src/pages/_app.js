@@ -1,4 +1,3 @@
-import '@/styles/normalize.css'
 import '@/styles/index.css'
 import '@/styles/navbar.css'
 import '@/styles/Home.css'
