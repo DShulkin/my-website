@@ -31,7 +31,7 @@
 .homeHeader {
   animation: slideUp .8s ease forwards;
   opacity: 0; 
-  align-self: end
+  align-self: end;
 }
 
 @keyframes slideUp {
@@ -82,7 +82,7 @@
 @media (min-width: 1024px) {
 
   /* .homeHeader {
-     font-size: 7.3re
+     font-size: 7.3rem;
     line-height: 6.5rem; 
      max-width: 1700px; 
   } */
