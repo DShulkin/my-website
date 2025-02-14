@@ -6,10 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 15px; */
-  padding: 24px 0;
-  /* padding: 15px 0; */
-  /* padding: 0 0 16px 0; */
+  /* padding: 24px 0; */
+  height: 8vh;
   position: sticky;
   z-index: 1000; /* Ensure the navBar is on top of other content */
   /* background-color: #FAFAFA; */
@@ -136,14 +134,13 @@
     left: 0;
     bottom: -6px; /* line distance under link */
     width: 0%;
-    height: 1.75px;
+    height: 1.6px;
     background-color: #2B2B2B;
-    transition: width 0.22s ease-in-out; 
+    transition: width 0.2s ease-in-out; 
   }
 
   .navbarList a:hover::after {
     width: 100%; /* Expand width on hover */
-    
   }
 }
 /*------------------------- /768 Media Query ------------------------- */

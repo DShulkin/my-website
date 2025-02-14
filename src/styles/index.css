@@ -12,30 +12,18 @@ background-color: #E2E2E3; */
 /* background-color: #f0f0f0; */
 /* color: #2B2B2B; */
 
+   
+/* html {
+  scroll-padding-top: 14vh; 
+  Adjust this value to match your navbar height 
+} */
 
 @font-face {
-  font-family: 'StaraBlack';
-  src: url('/public/fonts/stara-black.woff2') format('woff2'),
-       url('/public/fonts/stara-black.woff') format('woff');
+  font-family: 'StaraMed';
+  src: url('/fonts/stara-medium.woff2') format('woff2'),
+       url('/fonts/stara-medium.woff') format('woff');
   font-style: normal;
-  font-weight: 900;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'StaraExtBd';
-  src: url('/fonts/stara-extrabold.woff2') format('woff2'),
-       url('/fonts/stara-extrabold.woff') format('woff');   
-  font-style: normal;
-  font-weight: 800;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'StaraBold';
-  src: url('/fonts/stara-bold.woff2') format('woff2'),
-       url('/fonts/stara-bold.woff') format('woff');
-  font-weight: 700;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
 
@@ -49,11 +37,28 @@ background-color: #E2E2E3; */
 }
 
 @font-face {
-  font-family: 'StaraMed';
-  src: url('/fonts/stara-medium.woff2') format('woff2'),
-       url('/fonts/stara-medium.woff') format('woff');
+  font-family: 'StaraBold';
+  src: url('/fonts/stara-bold.woff2') format('woff2'),
+       url('/fonts/stara-bold.woff') format('woff');
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraExtBd';
+  src: url('/fonts/stara-extrabold.woff2') format('woff2'),
+       url('/fonts/stara-extrabold.woff') format('woff');   
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'StaraBlack';
+  src: url('/public/fonts/stara-black.woff2') format('woff2'),
+       url('/public/fonts/stara-black.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
   text-rendering: optimizeLegibility;
 }
 

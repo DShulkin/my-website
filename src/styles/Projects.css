@@ -1,15 +1,19 @@
 /* Container wrapping all accordion items */
-.accordion-container {
-  width: 100%;
-  /* margin: 40px auto; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
+
+#projects{
+  height: 100vh;
+  /* padding-top: 80px;  Match your navbar height 
+  margin-top: -80px;  Negative margin to avoid excessive spacing  */
 }
 
-/* Each accordion item has a bottom border */
-/* .accordion-item {
-  border-bottom: 1px solid #ccc;
-} */
+.accordion-container {
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 2px solid;
+}
+
 
 /* Header: clickable area with plus/minus icon on the right */
 .accordion-header {
@@ -20,7 +24,7 @@
   cursor: pointer;
   padding: 16px;
   border: none;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   background-color: transparent;
 
   /* transition: background-color 0.3s ease; */
@@ -32,7 +36,9 @@
 
 /* Title text inside the header */
 .accordion-title {
-  font-size: 16px;
+  font-family: "StaraSemBd";
+  text-align: left;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -68,7 +74,15 @@
 
 @media (min-width: 768px) {
 
-  .accordion-header {
+  /* .accordion-header {
     border-bottom: 2px solid;
-  }
+  } */
+}
+
+@media (min-width: 1440px) {
+
+  .accordion-container {
+    width: 50%;
+}
+
 }
