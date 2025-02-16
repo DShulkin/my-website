@@ -47,8 +47,7 @@
 @media (min-width: 1024px) {
 
   #home {
-    /* height: 89vh; */
-    height: calc(97vh - 17vh)
+    height: 89vh;
   }
 
   .first-half {
