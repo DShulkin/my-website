@@ -1,30 +1,7 @@
-/* Fallback value */
-/* :root {
-  --vh: 1vh; 
-} */
-
-/* @supports (height: 100dvh) {
-  :root {
-    --vh: 1dvh; 
-  }
-} */
-
-/*------------------------- HOME ------------------------- */ 
-
-/* #home {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    gap: 24px;
-    margin: 0 auto;
-    height: calc(var(--vh, 1vh)* 100 - 60px);
-
-} */
-       /* max-width: 1200px; */
-
 #home {
   display: flex;
   height: calc(80vh - 8vh);
+  margin-top: 8vh;
   /* margin-bottom: 10vh; */
   /* height: calc(var(--vh, 1vh)* 100 - 60px); */
 }
