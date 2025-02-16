@@ -24,7 +24,7 @@
 
 #home {
   display: flex;
-  height: 80vh;
+  height: calc(80vh - 8vh);
   /* margin-bottom: 10vh; */
   /* height: calc(var(--vh, 1vh)* 100 - 60px); */
 }
@@ -89,10 +89,10 @@
 
 /*------------------------- /HOME ------------------------- */ 
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
 
   #home {
     height: 90vh;
   }
 
-}
+} */
