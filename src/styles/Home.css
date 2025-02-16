@@ -1,9 +1,6 @@
 #home {
   display: flex;
-  min-height: calc(100vh - 8vh);
-  margin-top: 8vh;
-  /* margin-bottom: 10vh; */
-  /* height: calc(var(--vh, 1vh)* 100 - 60px); */
+  height: 80vh;
 }
 
 .homeHeader {
