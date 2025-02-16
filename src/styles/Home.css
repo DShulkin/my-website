@@ -26,7 +26,7 @@
 @media (min-width: 768px) {
 
   #home {
-    height: 80vh;
+    height: 75vh;
     align-items: flex-end;
     justify-content: flex-end;
   }
