@@ -73,7 +73,7 @@
 @media (min-width: 1024px) {
 
   #home {
-    height: 94vh;
+    height: 89vh;
   }
 
   .first-half {
@@ -92,7 +92,7 @@
 @media (min-width: 1440px) {
 
   #home {
-    height: 100vh;
+    height: 90vh;
   }
 
 }
