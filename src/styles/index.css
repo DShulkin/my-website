@@ -64,33 +64,33 @@ background-color: #E2E2E3; */
 
 body {
   padding: 0 20px 15px 20px;
-}
-
-
-body, p, a {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  /* background-color: #FAFAFA; */
-  /* color: #313131;  */ /* Set default text color */
-  background-color : #f1f1f1;
+  background-color: #f1f1f1;
   color: #010101;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+p, a {
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
+  color: inherit;
 }
 
 /* h1.homeHeader */
 h1 {
-  /* font-size: clamp(2.75rem, 9vw, 9rem);
-  line-height: clamp(2.4rem, 8vw, 8rem); */
-  font-size: clamp(2.75rem, 7vw, 9rem);
-  line-height: clamp(2.4rem, 6vw, 8rem);
+  /* font-size: clamp(3.05rem, 7vw, 9rem);
+  line-height: clamp(2.7rem, 6vw, 8rem); */
+  font-size: clamp(2.75rem, 7vw, 8.5rem);
+  line-height: clamp(2.4rem, 6vw, 7.5rem);
   text-transform: uppercase;
 }
-
 
 @media (min-width: 768px) {
   body {

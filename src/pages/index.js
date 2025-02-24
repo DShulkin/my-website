@@ -12,7 +12,7 @@ export default function Homepage() {
       <Head>
         <title>davidshulkin.io</title>
         <meta name="description" content="David Shulkin is a front-end developer, software engineer and 
-        graphic designer. Explore his portfolio showcasing professional web development projects and skills." />
+        graphic designer based in Indiana. Explore his portfolio showcasing professional web development projects and skills." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
