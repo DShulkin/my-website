@@ -24,6 +24,8 @@
   cursor: pointer;
   padding: 16px 0;
   border: none;
+  color:inherit;
+  /* color: #010101; */
   /* border-bottom: 2px solid; */
   background-color: transparent;
 }
@@ -40,9 +42,6 @@
   margin: 0;
   font-size: clamp(1.15rem, 2.2vw, 1.75rem);
   line-height: clamp(1rem, 4.25vw, 2.75rem);
-  /* font-size: clamp(1.15rem, 2.9vw, 1.75rem); */
-  /* font-size: clamp(1.5rem, 2.9vw, 2rem); */
-  /* line-height: clamp(2.4rem, 8vw, 8rem); */
 }
 
 /* Icon on the right side of the header */

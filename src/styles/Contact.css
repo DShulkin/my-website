@@ -66,10 +66,17 @@ textarea:focus {
 .submit-button {
   display: flex;
   place-self: start;
+  align-items: center;
+  font-weight: 500;
 }
 
 .arrow {
-  height: 12px;
+  height: 14px;
+  transition: transform 0.2s ease-out;
+}
+
+.submit-button:hover .arrow {
+  transform: translateX(10px); 
 }
 
   /*------------------------- CONTACT ------------------------- */ 
