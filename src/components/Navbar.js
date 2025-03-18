@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import d_logo from '../assets/icons/d_logo.svg'
+import d_logo from '../assets/icons/d3.svg'
 import hamburgerMenu from '../assets/icons/hamburgerMenu.svg'
 
 function Navbar() {
