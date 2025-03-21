@@ -102,6 +102,11 @@ h1 {
     padding: 0 80px 40px 80px;
   }
 
+  /* p, a, label, input, textarea {
+    font-size: 1.25em;
+  } */
+
+
   .contact-footer-container {
     display: grid;
     grid-template-rows: auto; /* Let the rows adjust based on their content */
