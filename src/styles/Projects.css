@@ -30,6 +30,11 @@
   background-color: transparent;
 }
 
+/* Whene isOpen is true, the header will turn grey */
+.accordion-header[aria-expanded="true"] .accordion-title  {
+  color: #7c7c7c;
+}
+
 .accordion-title {
   font-family: "StaraBold";
   text-align: left;
@@ -77,6 +82,13 @@
   line-height: 22px;
 }
 
+.accordion-content > button {
+  background-color: transparent;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 .project-icon {
   /* width: 2em;
   height: 1.25em; */
@@ -90,21 +102,14 @@
   fill: #7c7c7c;
 }
 
-.accordion-content > button {
-  background-color: transparent;
-  background: none;
-  border: none;
-  padding: 0;
-}
-
-.accordion-content > button:hover,
-.accordion-title:hover {
-  color: #7c7c7c;
-}
-
 @media (min-width: 768px) {
   .accordion-title {
     padding: 18px 0;
+  }
+
+  .accordion-content > button:hover,
+  .accordion-title:hover {
+    color: #7c7c7c;
   }
 }
 
