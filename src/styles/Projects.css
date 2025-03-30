@@ -14,7 +14,6 @@
   border-bottom: 2px solid;
 }
 
-
 /* Header: clickable area with plus/minus icon on the right */
 .accordion-header {
   width: 100%;
@@ -22,7 +21,8 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 16px 0;
+  /* padding: 16px 0; */
+  padding: 0;
   border: none;
   color:inherit;
   /* color: #010101; */
@@ -30,18 +30,19 @@
   background-color: transparent;
 }
 
-/* .accordion-header:hover {
-  background-color: #e9ecef;
-} */
-
-/* Title text inside the header */
 .accordion-title {
   font-family: "StaraBold";
   text-align: left;
   font-size: 24px;
+  padding: 16px 0;
+  width: 100%;
   margin: 0;
-  font-size: clamp(1.15rem, 2.2vw, 1.75rem);
-  line-height: clamp(1rem, 4.25vw, 2.75rem);
+
+  /* font-size: clamp(1.15rem, 2.2vw, 1.75rem);
+  line-height: clamp(1rem, 4.25vw, 2.75rem); */
+
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  line-height: clamp(2rem, 4.25vw, 2.75rem);
 }
 
 /* Icon on the right side of the header */
@@ -72,12 +73,11 @@
 
 /* Paragraph spacing inside content */
 .accordion-content p {
-  /* font-size: 1.25em; */
   font-size: 1.125em;
-  /* padding: 12px 0 0 0; */
+  line-height: 22px;
 }
 
-.projectIcon {
+.project-icon {
   /* width: 2em;
   height: 1.25em; */
   width: 2.5em;
@@ -85,26 +85,27 @@
   padding: 20px 0 10px 0;
 }
 
+.accordion-content > button {
+  background-color: transparent;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
+.accordion-content > button:hover,
+.accordion-title:hover {
+  color: #7c7c7c;
+}
+
 @media (min-width: 768px) {
-
-  .accordion-header {
-    padding: 18px;
-
+  .accordion-title {
+    padding: 18px 0;
   }
-
-  /* .accordion-header {
-    border-bottom: 2px solid;
-  } */
 }
 
 @media (min-width: 1440px) {
-
   .accordion-container {
     width: 50%;
-}
-
-  .accordion-title {
-    /* font-size: 32px; */
   }
-
 }

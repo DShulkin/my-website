@@ -43,7 +43,7 @@ function Projects() {
                   onClick={() => window.open("https://github.com/yourusername/yourrepo", "_blank")}
                   aria-label="Go to GitHub"
                 >
-                  <svg className="projectIcon"
+                  <svg className="project-icon"
                     stroke="currentColor"
                     fill="currentColor"
                     stroke-width="0"
@@ -60,7 +60,7 @@ function Projects() {
                 onClick={() => window.open("https://github.com/yourusername/yourrepo", "_blank")}
                 aria-label="Go to GitHub"
               > 
-                <svg className="projectIcon" 
+                <svg className="project-icon" 
                   stroke="currentColor" 
                   fill="currentColor" 
                   stroke-width="0" 
@@ -80,3 +80,6 @@ function Projects() {
   );
 }
 export default Projects;
+
+
+// MAKE A FUNCTION FOR THE ACCORDION-CONTENT-BUTTONS TO SIFT THROUGHT JSON AND RETRIEVE THE LINK FOR THE FIRIST BUTTON AND A LINK FOR THE SECONF ONE
