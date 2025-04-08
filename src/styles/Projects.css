@@ -36,6 +36,7 @@
 }
 
 .accordion-title {
+  transition: color 0.19s ease;
   font-family: "StaraBold";
   text-align: left;
   font-size: 24px;
@@ -92,7 +93,7 @@
 .project-icon {
   /* width: 2em;
   height: 1.25em; */
-  width: 2.5em;
+  width: 2.3em;
   height: 1.5em;
   padding: 20px 0 10px 0;
   fill: 010101;
@@ -106,15 +107,15 @@
   .accordion-title {
     padding: 18px 0;
   }
-
-  .accordion-content > button:hover,
-  .accordion-title:hover {
-    color: #7c7c7c;
-  }
 }
 
 @media (min-width: 1440px) {
   .accordion-container {
     width: 50%;
+  }
+
+  .accordion-content > button:hover,
+  .accordion-title:hover {
+    color: #7c7c7c;
   }
 }
