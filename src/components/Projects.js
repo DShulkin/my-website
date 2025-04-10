@@ -3,27 +3,28 @@ import projectsData from "../projects.json";
 import ApiDirectory from "./projects/ApiDirectory.js";
 
 
-
 function Projects() {
   const [openIndex, setOpenIndex] = useState(null);
   const handleToggle = (id) => {
-    setOpenIndex((prevIndex) => (prevIndex === id ? null : id));
+    setOpenIndex((prevIndex) => (prevIndex === id ? null : id)); 
+    /*if prevIndex is equal to id, then the condition evaluates to falsey - meaning preIndex is not null 
+     and setOpenIndex becomes the value of the id, updating openIndex with that id.*/
   };
 
   return (
     <section id="projects">
       <h1>Projects</h1>
-      <div className="projectView">
+      <div className="project-list">
         <div className="accordion-container">
           {projectsData.projects.map((project) => {
-            const isOpen = project.id === openIndex; // if the index matches openIndex its true, if not, false.
+            const isOpen = project.id === openIndex; // if the project id matches openIndex its true, if not, false.
 
             return (
               <div className="accordion-item" key={project.id}>
                 <button
                   className="accordion-header"
                   aria-expanded={isOpen} // comes out to true or false - aria-expanded={false}
-                  aria-controls={`accordion-content-${project.id}`} // can be read as: aria-controls="accordion-content 2"
+                  aria-controls={`accordion-content-${project.id}`} // can be read as: aria-controls="accordion-content-2"
                   onClick={() => handleToggle(project.id)}
                 >
                   <h2 className="accordion-title">{project.title}</h2>
@@ -47,7 +48,7 @@ function Projects() {
                   >
                     <svg 
                       className="project-icon"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -57,12 +58,12 @@ function Projects() {
                 </button>
 
                 <button
-                  onClick={() => window.open("https://github.com/yourusername/yourrepo", "_blank")}
+                  onClick={() => window.open(`${project.gitHubLink}`, "_blank")}
                   aria-label="Go to GitHub"
                 > 
                   <svg 
                     className="project-icon" 
-                    stroke-width="0" 
+                    strokeWidth="0" 
                     viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                     >
@@ -83,4 +84,4 @@ function Projects() {
 export default Projects;
 
 
-// MAKE A FUNCTION FOR THE ACCORDION-CONTENT-BUTTONS TO SIFT THROUGHT JSON AND RETRIEVE THE LINK FOR THE FIRIST BUTTON AND A LINK FOR THE SECONF ONE
+// MAKE A FUNCTION FOR THE ACCORDION-CONTENT-BUTTONS TO SIFT THROUGHT JSON AND RETRIEVE THE LINK FOR THE FIRST BUTTON AND A LINK FOR THE SECONF ONE

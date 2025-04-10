@@ -21,13 +21,12 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  /* padding: 16px 0; */
+  color: inherit;
   padding: 0;
   border: none;
-  color:inherit;
-  /* color: #010101; */
-  /* border-bottom: 2px solid; */
+  outline: none;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Whene isOpen is true, the header will turn grey */
@@ -86,7 +85,7 @@
 .accordion-content > button {
   background-color: transparent;
   background: none;
-  border: none;
+  border: none; 
   padding: 0;
 }
 
