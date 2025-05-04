@@ -9,7 +9,7 @@ function Contact() {
 
   // Handle input field changes and update form data state
   const handleChange = (e) => {
-    const { name, value } = e.target; // Extract name and value from the input attributes
+    const { name, value } = e.target // Extract name and value from the input attributes
     setFormData((prevData) => ({ ...prevData, [name]: value }))
   }
 

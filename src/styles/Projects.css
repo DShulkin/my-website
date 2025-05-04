@@ -29,7 +29,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Whene isOpen is true, the header will turn grey */
+/* When isOpen is true, the header will turn grey */
 .accordion-header[aria-expanded="true"] .accordion-title  {
   color: #7c7c7c;
 }
@@ -64,16 +64,22 @@
 /* The content area that should expand/collapse */
 .accordion-content {
   max-height: 0;
+  max-width: 600px;
+  opacity: 0;
   overflow: hidden;
   padding: 0 16px;
-  /* background-color: #fff; */
-  transition: max-height 0.3s ease;
+  pointer-events: none;
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
 }
 
 /* When an item is open, we set a larger max-height to reveal content */
 .accordion-content.open {
-  max-height: 300px; /* adjust as needed */
-  max-width: 600px;
+  max-height: 500px;
+  padding: 0 16px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Paragraph spacing inside content */

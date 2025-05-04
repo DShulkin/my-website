@@ -1,15 +1,18 @@
-import React, { useState } from "react";
-import projectsData from "../projects.json";
-import ApiDirectory from "./projects/ApiDirectory.js";
+import React, { useState } from "react"
+import projectsData from "../projects.json"
+import ApiDirectory from "./projects/ApiDirectory.js"
 
 function Projects() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null)
 
   const handleToggle = (id) => {
-    setOpenIndex((prevIndex) => (prevIndex === id ? null : id));
-    /*if prevIndex is equal to id, then the condition evaluates to falsey - meaning preIndex is not null 
-     and setOpenIndex becomes the value of the id, updating openIndex with that id.*/
-  };
+    setOpenIndex((prevIndex) => (prevIndex === id ? null : id))
+    /* 
+      condition ? valueIfTrue : valueIfFalse
+      If the previously opened index is the same as the clicked one (id), set openIndex to null to close it.
+      If the clicked id does not match the previously opened index, set openIndex to that id to open it. 
+    */
+  }
 
   return (
     <section id="projects">
@@ -18,8 +21,8 @@ function Projects() {
       <div className="projects-container">
         <div className="accordion-container">
           {projectsData.projects.map((project) => {
-            const isOpen = project.id === openIndex;
-
+            const isOpen = project.id === openIndex
+           
             return (
               <div className="accordion-item" key={project.id}>
                 <button
@@ -39,7 +42,7 @@ function Projects() {
                   className={`accordion-content ${isOpen ? "open" : ""}`}
                   role="region"
                   aria-labelledby={`accordion-item-${project.id}`}
-                  hidden={!isOpen}
+                  // hidden={!isOpen}
                 >
                   <p>{project.content}</p>
 
@@ -75,12 +78,14 @@ function Projects() {
                   </button>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
         
         {/* {openIndex === 1 ? (<ApiDirectory></ApiDirectory>) : openIndex === 2 ? (<div></div> ) : null } */}
         {/* might need to create a function based on openIndex using null and project.id* */}
+        {/* <img src={project.projectImage} /> */}
+        {/* <div className={`project-image-${project.id}`}></div> */}
 
         {/* Conditional content based on openIndex */}
         {openIndex === 1 ? (
@@ -90,7 +95,7 @@ function Projects() {
         ) : null}
       </div>
     </section>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
