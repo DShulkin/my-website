@@ -6,6 +6,13 @@
   margin-top: -80px;  Negative margin to avoid excessive spacing  */
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .accordion-container {
   width: 100%;
 }

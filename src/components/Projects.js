@@ -37,12 +37,11 @@ function Projects() {
                   </span>
                 </button>
 
-                <div
+                <div inert={!isOpen}
                   id={`accordion-content-${project.id}`}
                   className={`accordion-content ${isOpen ? "open" : ""}`}
                   role="region"
                   aria-labelledby={`accordion-item-${project.id}`}
-                  // hidden={!isOpen}
                 >
                   <p>{project.content}</p>
 
@@ -81,18 +80,45 @@ function Projects() {
             )
           })}
         </div>
-        
-        {/* {openIndex === 1 ? (<ApiDirectory></ApiDirectory>) : openIndex === 2 ? (<div></div> ) : null } */}
-        {/* might need to create a function based on openIndex using null and project.id* */}
-        {/* <img src={project.projectImage} /> */}
-        {/* <div className={`project-image-${project.id}`}></div> */}
 
-        {/* Conditional content based on openIndex */}
-        {openIndex === 1 ? (
-          <ApiDirectory />
-        ) : openIndex === 2 ? (
-          <div></div>
-        ) : null}
+
+        {/*     
+        CAN'T DO THIS, THE FUNCTION IS OUTSIDE THE SCOPE - SO THAT THE DIV ISNT NESTED 
+        INSIDE THE THE ACCORDION CONTAINER, THE DIV NEEDS TO BE NEXT TO IT DISPLAYED AS FLEX 
+            * if openIndex === project.id  show image 
+            * if openIndex !== project.id  hide image 
+            
+            <div className={`project-image-${project.id}`}>
+              <img src={project.projectImage} />
+            </div> 
+        
+            If the previously opened index is the same as the clicked one (id), set openIndex to null - to hide the image.
+            If the clicked id matches the previously opened index, set openIndex to that id - to show the image. 
+        */}
+          
+
+         {/*
+             NO LONGER VALID
+             if openIndex holds the value of null, - no image is shown --> the accordion item is closed, 
+             if openIndex holds a numerical value , - show the image --> the accordion item is open  
+        */}
+
+      
+
+      
+
+
+        {/*    
+            {openIndex !== null ? (<ApiDirectory></ApiDirectory>) : openIndex === null ? (<div></div> ) : null }
+            if openIndex does not hold the value null, - show the image --> the accordion item is open  
+            if openIndex holds the value null, - no image is shown --> the accordion item is closed
+            if neither condition is met --> render nothing
+        */}
+
+
+        {/* SHORTER VERSION: Conditional content based on openIndex v */}
+
+        {openIndex !== null ? <ApiDirectory /> : null}
       </div>
     </section>
   )

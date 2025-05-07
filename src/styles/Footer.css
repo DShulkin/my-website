@@ -20,7 +20,7 @@
 
   .social-icon-container .social-icon {
     width: 24px;
-    height: 24px;
+    height: 1.5em;
   }
 
   @media (min-width: 1024px) { 
