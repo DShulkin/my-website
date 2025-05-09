@@ -9,8 +9,9 @@
 .projects-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  height: 600px;
 }
 
 .accordion-container {

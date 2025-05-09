@@ -1,0 +1,23 @@
+.ApiDirectory {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: blue;
+  margin: auto;
+  /* margin: 0 auto */
+}
+
+.ApiDirectoryImage {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  }
+
+
+  /* .ApiDirectoryImage {
+    background-color: red;
+    width: var(--size, 500px);
+    height: var(--size, 500px);
+    margin: 0 auto;
+  } */
