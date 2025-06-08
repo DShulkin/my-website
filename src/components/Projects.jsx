@@ -3,12 +3,10 @@ import projectsData from '../projects.json'
 import ApiDirectory from './projects/ApiDirectory'
 import useBreakpoint from '../hooks/useBreakpoint'
 
-
-
 function Projects() {
   const [openIndex, setOpenIndex] = useState(null)
 
-  const { isMobile } = useBreakpoint();
+  const { isDesktop } = useBreakpoint();
 
   const handleToggle = (id) => {
     setOpenIndex((prevIndex) => (prevIndex === id ? null : id))
@@ -81,7 +79,7 @@ function Projects() {
           })}
         </div>
 
-        {openIndex !== null && !isMobile && <ApiDirectory />}
+        {openIndex !== null && isDesktop && <ApiDirectory />}
       </div>
     </section>
   )
