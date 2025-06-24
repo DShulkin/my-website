@@ -1,4 +1,4 @@
-.ApiDirectory {
+.apiContainer {
   display: flex;
   align-items: center;
   height: 100%;
@@ -7,7 +7,7 @@
   /* margin: 0 auto */
 }
 
-.ApiDirectoryImage {
+.apiImage {
   background-color: red;
   width: 500px;
   height: 500px;

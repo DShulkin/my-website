@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import projectsData from '../projects.json'
-import ApiDirectory from './projects/ApiDirectory'
 import useBreakpoint from '../hooks/useBreakpoint'
+import ApiDirectory from './projects/ApiDirectory'
+import projectsData from '../data/projects.json'
+
 
 function Projects() {
   const [openIndex, setOpenIndex] = useState(null)

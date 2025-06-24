@@ -1,38 +1,38 @@
 {
   "projects": [
     {
-      "id": 1, 
+      "id" : 1, 
       "title": "01  /  API Employee Directory",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sapien elit. Phasellus porta orci a nisl luctus, a pulvinar quam lobortis.",
-      "projectImage" : "/images/project-image.jpg",
+      "projectImage": "/src/assets/projectImgs/project-image.jpg",
       "gitHubLink": "https://github.com/DShulkin/Employee-Directory"
     },
     {
       "id": 2, 
       "title": "02  /  Interactive Photo Gallery",
       "content": "Aliquam erat volutpat. Nam quis mi non nisi sollicitudin volutpat sit amet non nisi. Donec venenatis, lectus vel rutrum aliquet, nisl ante aliquam magna.",
-      "projectImage" : "/images/project-image.jpg",
+      "projectImage": "/src/assets/projectImgs/project-image.jpg",
       "gitHubLink": "https://github.com/DShulkin/Interactive-Photo-Gallery"
     },
     {
       "id": 3, 
       "title": "03  /  Game Show Application",
       "content": "Curabitur id urna vitae magna euismod fermentum. Vestibulum eu erat at massa efficitur vestibulum. Quisque fringilla consequat facilisis.",
-      "projectImage" : "/images/project-image.jpg",
+      "projectImage": "/src/assets/projectImgs/project-image.jpg",
       "gitHubLink": "https://github.com/DShulkin/Game-Show-App"
     },
     {
       "id": 4, 
       "title": "04  /  Tic Tac Toe Game",
       "content": "Sed id arcu varius, sollicitudin arcu non, feugiat mi. Maecenas vitae sem at justo tempus dapibus. Nam tincidunt libero at malesuada finibus.",
-      "projectImage" : "/images/project-image.jpg",
+      "projectImage": "/src/assets/projectImgs/project-image.jpg",
       "gitHubLink": "https://github.com/DShulkin/TicTacToe"
     },
     {
       "id": 5, 
       "title": "05  /  Boostrap Site",
       "content": "Proin nec dui molestie, dignissim lorem non, ultrices enim. Nulla facilisi. Quisque vitae purus consequat, pretium sapien eget, finibus odio.",
-      "projectImage" : "/images/project-image.jpg",
+      "projectImage": "/src/assets/projectImgs/project-image.jpg",
       "gitHubLink": "https://github.com/DShulkin/BoostrapSite"
     }
   ]
