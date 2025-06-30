@@ -11,6 +11,11 @@ function Projects() {
 
   const handleToggle = (id) => {
     setOpenIndex((prevIndex) => (prevIndex === id ? null : id))
+    /* 
+    If the currently open item is the same one that was just clicked again, close it (set it to null)
+    Project 2 is open:      prevIndex === id → 2 === 2 → true.                 openIndex becomes null
+    Nothing open:           prevIndex === id → null === 2 → false.             openIndex becomes 2
+    */
   }
 
   return (
@@ -20,7 +25,7 @@ function Projects() {
       <div className="projects-container">
         <div className="accordion-container">
           {projectsData.projects.map((project) => {
-            const isOpen = project.id === openIndex
+            const isOpen = project.id === openIndex  /* initial: project id === null, boolean returns false (is not open) */
            
             return (
               <div className="accordion-item" key={project.id}>
@@ -44,7 +49,6 @@ function Projects() {
                 >
                   <p>{project.content}</p>
 
-                  {/* Button for interactive project preview (placeholder link) */}
                   <button
                     onClick={() => window.open("https://takesYouToInteractiveProject", "_blank")}
                     aria-label="View Interactive Project"
@@ -60,7 +64,6 @@ function Projects() {
                     </svg>
                   </button>
 
-                  {/* GitHub Button */}
                   <button
                     onClick={() => window.open(`${project.gitHubLink}`, "_blank")}
                     aria-label="Go to GitHub"
@@ -80,7 +83,19 @@ function Projects() {
           })}
         </div>
 
-        {openIndex !== null && isDesktop && <ApiDirectory />}
+        {/* 
+          Loop through each item in the projects array and find the one with an id matching openIndex
+          If a match is found, return that project's projectImage value
+        */}
+          
+        {openIndex !== null && isDesktop && (
+          <ApiDirectory 
+            projectImage = {
+              projectsData.projects.find((project) => project.id === openIndex)?.projectImage
+            }
+          />
+        )}
+
       </div>
     </section>
   )

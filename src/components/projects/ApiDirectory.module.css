@@ -1,23 +1,33 @@
 .apiContainer {
+  /* background-color: blue; */
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: blue;
   margin: auto;
   /* margin: 0 auto */
 }
 
 .apiImage {
-  background-color: red;
+  background-size: cover;
+  background-position: center;
   width: 500px;
   height: 500px;
   margin: 0 auto;
   }
 
 
-  /* .ApiDirectoryImage {
-    background-color: red;
-    width: var(--size, 500px);
-    height: var(--size, 500px);
-    margin: 0 auto;
-  } */
+/* .apiContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apiImage {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+} */
