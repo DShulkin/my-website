@@ -7,14 +7,13 @@ import projectsData from '../data/projects.json'
 function Projects() {
   const [openIndex, setOpenIndex] = useState(null)
 
-  const { isDesktop } = useBreakpoint();
+  const { isDesktop } = useBreakpoint()
 
   const handleToggle = (id) => {
     setOpenIndex((prevIndex) => (prevIndex === id ? null : id))
     /* 
-    If the currently open item is the same one that was just clicked again, close it (set it to null)
-    Project 2 is open:      prevIndex === id → 2 === 2 → true.                 openIndex becomes null
-    Nothing open:           prevIndex === id → null === 2 → false.             openIndex becomes 2
+    No project is currently open:     prevIndex === id → null === 2 → false.     setOpenIndex(2) → opens Project 2
+    Project 2 is currently open:      prevIndex === id → 2 === 2 → true.         setOpenIndex(null) → closes Project 2
     */
   }
 
@@ -25,7 +24,16 @@ function Projects() {
       <div className="projects-container">
         <div className="accordion-container">
           {projectsData.projects.map((project) => {
-            const isOpen = project.id === openIndex  /* initial: project id === null, boolean returns false (is not open) */
+            const isOpen = project.id === openIndex  
+            /* 
+              The project.id should match the open index. → boolean returns true → (is open) 
+              ie:, do any of the project ID's match the open index?
+              
+              vice versa:
+
+              The open index should match project.id → boolean returns true → (is open)
+              ie:, does the open index match any of the project ID's?
+            */
            
             return (
               <div className="accordion-item" key={project.id}>

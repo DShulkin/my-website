@@ -1,11 +1,11 @@
-.apiContainer {
-  /* background-color: blue; */
+/* .apiContainer {
   display: flex;
   align-items: center;
   height: 100%;
   margin: auto;
-  /* margin: 0 auto */
-}
+  border: 1px solid black;
+  margin: 0 auto
+} */
 
 .apiImage {
   background-size: cover;

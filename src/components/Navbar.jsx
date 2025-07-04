@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import hamburgerMenu from '../assets/icons/hamburgerMenu.svg'
+import hamburgerIcon from '../assets/icons/hamburgerIcon.svg'
+import useBreakpoint from '@/hooks/useBreakpoint';
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const { isMobile } = useBreakpoint()
+
   const toggleDrawer = () => {
     if (!drawerOpen) { // When the drawer is closed (!drawerOpen is true), the function adds the no-scroll 
       document.body.classList.add('no-scroll')
@@ -37,25 +41,33 @@ function Navbar() {
          </svg>
         </div>
         
-        <div className="hamburger" onClick={toggleDrawer}>
-          <img {...hamburgerMenu} alt="Hamburger Menu" />
-        </div>
+        {/* Only show hamburger and drawer on mobiile */}
+        {isMobile && (
+          <>
+            <div className="hamburger" onClick={toggleDrawer}>
+              <img {...hamburgerIcon} alt="Hamburger Icon" />
+            </div>
 
-        <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>
-          <ul>
-            <li><a href="#home" onClick={toggleDrawer}>Home</a></li>
-            <li><a href="#about" onClick={toggleDrawer}>About</a></li>
-            <li><a href="#projects" onClick={toggleDrawer}>Projects</a></li>
-            <li><a href="#contact" onClick={toggleDrawer}>Contact</a></li>
+            <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>
+              <ul>
+                <li><a href="#home" onClick={toggleDrawer}>Home</a></li>
+                <li><a href="#about" onClick={toggleDrawer}>About</a></li>
+                <li><a href="#projects" onClick={toggleDrawer}>Projects</a></li>
+                <li><a href="#contact" onClick={toggleDrawer}>Contact</a></li>
+              </ul>
+            </div>
+          </>
+        )}
+
+        {/* Only show navbar-list on tablet screens sizes and up */}
+        {!isMobile && (
+          <ul className="navbar-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-
-        <ul className="navbarList">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        )}
       </nav>
     </>
   )
