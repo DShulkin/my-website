@@ -3,10 +3,19 @@ import * as styles from './ApiDirectory.module.css'
 
 export default function ApiDirectory({projectImage}) {
   return (
-      <div 
-        className={styles.apiImage}
-        style={{backgroundImage: `url(${projectImage})`}}
-      >
-      </div>
+    <div className={styles.apiContainer}>
+      <img src={projectImage} alt="Project" className={styles.apiImage} />
+    </div>
   )
 }
+
+
+// export default function ApiDirectory({projectImage}) {
+//   return (
+//       <div 
+//         className={styles.apiImage}
+//         style={{backgroundImage: `url(${projectImage})`}}
+//       >
+//       </div>
+//   )
+// }

@@ -44,17 +44,26 @@ function Navbar() {
         {/* Only show hamburger and drawer on mobiile */}
         {isMobile && (
           <>
-            <div className="hamburger" onClick={toggleDrawer}>
+            {/* <div className="hamburger" onClick={toggleDrawer}>
               <img {...hamburgerIcon} alt="Hamburger Icon" />
-            </div>
+            </div> */}
+
+              <div className="hamburger-icon" onClick={toggleDrawer}>
+                <span></span> 
+                <span></span> 
+                <span></span>
+              </div>
 
             <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>
-              <ul>
-                <li><a href="#home" onClick={toggleDrawer}>Home</a></li>
-                <li><a href="#about" onClick={toggleDrawer}>About</a></li>
-                <li><a href="#projects" onClick={toggleDrawer}>Projects</a></li>
-                <li><a href="#contact" onClick={toggleDrawer}>Contact</a></li>
-              </ul>
+              <div className="drawer-content" onClick={(e) => e.stopPropagation()}> 
+              {/* .drawer-content Prevents the drawer from closing if a user clicks anywhere on the screen that isnt a link */}
+                <ul>
+                  <li><a href="#home" onClick={toggleDrawer}>Home</a></li>
+                  <li><a href="#about" onClick={toggleDrawer}>About</a></li>
+                  <li><a href="#projects" onClick={toggleDrawer}>Projects</a></li>
+                  <li><a href="#contact" onClick={toggleDrawer}>Contact</a></li>
+                </ul>
+              </div>
             </div>
           </>
         )}

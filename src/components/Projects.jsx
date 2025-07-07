@@ -45,7 +45,9 @@ function Projects() {
                 >
                   <h2 className="accordion-title">{project.title}</h2>
                   <span className={`accordion-icon ${isOpen ? "open" : ""}`}>
-                    {isOpen ? "-" : "+"}
+                    <span className="horizontal-line"></span>
+                    <span className="vertical-line"></span>
+                    {/* {isOpen ? "-" : "+"} */}
                   </span>
                 </button>
 

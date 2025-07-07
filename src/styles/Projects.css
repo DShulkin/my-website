@@ -1,6 +1,4 @@
-/* Container wrapping all accordion items */
-
-#projects{
+#projects {
   height: 100vh;
   /* padding-top: 80px;  Match your navbar height 
   margin-top: -80px;  Negative margin to avoid excessive spacing  */
@@ -12,7 +10,6 @@
   align-items: flex-start;
   justify-content: space-between;
   height: auto;
-    /* height: 600px; */
 }
 
 .accordion-container {
@@ -23,7 +20,6 @@
   border-bottom: 2px solid;
 }
 
-/* Header: clickable area with plus/minus icon on the right */
 .accordion-header {
   width: 100%;
   display: flex;
@@ -51,26 +47,45 @@
   padding: 16px 0;
   width: 100%;
   margin: 0;
-
-  /* font-size: clamp(1.15rem, 2.2vw, 1.75rem);
-  line-height: clamp(1rem, 4.25vw, 2.75rem); */
-
   font-size: clamp(1.4rem, 2.2vw, 1.75rem);
   line-height: clamp(2rem, 4.25vw, 2.75rem);
 }
 
-/* Icon on the right side of the header */
 .accordion-icon {
-  font-size: 24px;
-  transition: transform 0.3s ease;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
 }
 
-/* Rotate the icon 180° when open (optional for effect) */
-.accordion-icon.open {
-  transform: rotate(180deg);
+.accordion-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #010101;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease;
+  border-radius: 1px;
 }
 
-/* The content area that should expand/collapse */
+.accordion-icon .horizontal-line {
+  width: 100%;
+  height: 2px;
+}
+
+.accordion-icon .vertical-line {
+  width: 2px;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.accordion-icon.open .vertical-line {
+  height: 0;
+  opacity: 0;
+}
+
 .accordion-content {
   max-height: 0;
   max-width: 600px;
@@ -105,8 +120,6 @@
 }
 
 .project-icon {
-  /* width: 2em;
-  height: 1.25em; */
   width: 2.3em;
   height: 1.5em;
   padding: 20px 0 10px 0;
@@ -117,11 +130,15 @@
   fill: #7c7c7c;
 }
 
+/*------------------------- 768 Media Query ------------------------- */
+
 @media (min-width: 768px) {
   .accordion-title {
     padding: 18px 0;
   }
 }
+
+/*------------------------- 1440 Media Query ------------------------- */
 
 @media (min-width: 1440px) {
   .accordion-container {
@@ -131,5 +148,6 @@
   .accordion-content > button:hover,
   .accordion-title:hover {
     color: #7c7c7c;
+    /* Prevent sticky hover on touch screens */
   }
 }

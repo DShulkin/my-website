@@ -13,21 +13,68 @@
   background-color : #f1f1f1;
 }
 
+
+
+/* display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    position: -webkit-sticky;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    background-color: #f1f1f1;
+    top: unset;
+    align-content: center;
+    width: 88%; */
+
+
+
+
+    
 .navbar li a {
   font-family: 'StaraMed', 'Quattrocento Sans', sans-serif;
 }
 
 .logo {
-  width: 28px;  
-  height: 28px;
+  /* width: 28px;  
+  height: 28px; */
+    width: 36px;  
+  height: 36px;
   z-index: 1001;
 }
 
 .hamburger {
   display: block;
-  width: 24px;
   cursor: pointer;
   z-index: 1001; 
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+    width: 36px;
+    z-index: 1001;
+    /* width: 32px; */
+}
+
+.hamburger-icon span {
+  border-bottom: 2.5px solid #010101;
+}
+
+.hamburger-icon :nth-child(2) {
+    /* transform: scaleX(0.85);
+    transform-origin: right; */
+    /* width: 50%; */
+}
+
+.hamburger-icon :nth-child(3) {
+  /* transform: scaleX(0.5);
+  transform-origin: right; */
+  /* width: 50%; */
 }
 
 /*------------------------- Drawer ------------------------- */
@@ -47,7 +94,7 @@
   right: 0; /* Move into view */
 }
 
-.drawer ul {
+.drawer-content ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,11 +106,8 @@
   list-style-type: none;
 }
 
-/* .drawer li {
-  margin: 20px 0;
-} */
 
-.drawer li a {
+.drawer-content li a {
   text-decoration: none;
   font-size: clamp(2.75rem, 7vw, 8.5rem);
   font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
@@ -73,7 +117,6 @@
 /*------------------------- 768 Media Query ------------------------- */
 
 @media (min-width: 768px) {
-
   .navbar-list {
     display: flex;
     flex-direction: row;
@@ -86,36 +129,48 @@
     box-shadow: none; 
     list-style-type: none;
   }
-
+  
   .navbar-list li a {
     font-size: 20px;
-    text-decoration: none; /* Remove default underline */
-    position: relative; /* Ensures the link container is relatively positioned */
+    text-decoration: none;
+    position: relative; 
 }
 
   .navbar-list a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px; /* line distance under link */
+    bottom: -6px;
     width: 0%;
     height: 1.6px;
     background-color: #2B2B2B;
-    transition: width 0.2s ease-in-out; 
+    transition: width 0.15s ease-in-out; 
   }
 
   .navbar-list a:hover::after {
-    width: 100%; /* Expand width on hover */
+    width: 100%; 
   }
 }
 
-/*------------------------- 1024 Media Query ------------------------- */
 
-/* @media (min-width: 1024px) {
+/*------------------------- Media Query ------------------------- */
 
-  .navbar {
-    padding: 32px 0;
-    border-bottom: 2px solid #010101;
+/* @media (min-width: 1440px) {
+  .navbar-list {
+    gap: 5.4em;
   }
+}
 
-} */
+
+@media (min-width: 1600px) {
+  .navbar-list {
+    gap: 7.6em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navbar-list {
+    gap: 9.25em;
+  }
+}
+  */

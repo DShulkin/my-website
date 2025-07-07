@@ -8,26 +8,38 @@
 } */
 
 .apiImage {
-  background-size: cover;
-  background-position: center;
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  }
-
-
-/* .apiContainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 515px;
+  height: 515px;
 }
 
-.apiImage {
-  width: 400px;
-  height: 300px;
+/* .apiImage {
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
+  width: 515px;
+  height: 515px;
+} */
+
+
+/*------------------------- 1600 Media Query ------------------------- */
+
+@media (min-width: 1600px) {
+  .apiImageContainer {
+    margin: 0 auto;
+  }
+
+  /* .apiImage {
+  background-size: cover;
+  background-position: center;
+  width: clamp(1vw, 30vw, 700px);
+  height: auto;
+} */
+
+}
+
+/* @media (min-width: 1920px) {
+
+  .apiImage {
+    margin-right: 7em;
+  }
+
 } */
