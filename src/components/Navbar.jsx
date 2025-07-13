@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
-import hamburgerIcon from '../assets/icons/hamburgerIcon.svg'
 import useBreakpoint from '@/hooks/useBreakpoint';
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
   const { isMobile } = useBreakpoint()
 
   const toggleDrawer = () => {
@@ -44,15 +42,11 @@ function Navbar() {
         {/* Only show hamburger and drawer on mobiile */}
         {isMobile && (
           <>
-            {/* <div className="hamburger" onClick={toggleDrawer}>
-              <img {...hamburgerIcon} alt="Hamburger Icon" />
-            </div> */}
-
-              <div className="hamburger-icon" onClick={toggleDrawer}>
-                <span></span> 
-                <span></span> 
-                <span></span>
-              </div>
+            <div className="hamburger-icon" onClick={toggleDrawer}>
+              <span></span> 
+              <span></span> 
+              <span></span>
+            </div>
 
             <div className={`drawer ${drawerOpen ? 'open' : ''}`} onClick={handleDrawerClick}>
               <div className="drawer-content" onClick={(e) => e.stopPropagation()}> 

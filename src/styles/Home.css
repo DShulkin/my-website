@@ -1,12 +1,14 @@
 #home {
   display: flex;
-  height: 80vh;
+  /* height: 80vh; */
+  height: 92vh;
 }
 
 .homeHeader {
   animation: slideUp .8s ease forwards;
   opacity: 0; 
-  align-self: end;
+  /* align-self: end; */
+  align-self: center;
   margin: 0;
 }
 
@@ -30,6 +32,10 @@
     justify-content: flex-end;
   }
 
+  .homeHeader {
+      align-self: end;
+  }
+
   .first-half {
     display: block;
     text-align: right;
@@ -46,6 +52,7 @@
 @media (min-width: 1024px) {
 
   #home {
+    height: 84vh;
     height: 84vh;
   }
 
