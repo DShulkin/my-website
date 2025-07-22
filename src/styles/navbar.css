@@ -11,7 +11,7 @@
   bottom: 0;
   background-color : #010101;
   width: 100vw;
-  height: 8vh;
+  height: 7vh;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -21,8 +21,8 @@
 }
 
 .logo {
-  width: 36px;  
-  height: 36px;
+  width: 32px;  
+  height: 32px;
   z-index: 1001;
   fill: #f1f1f1;
 }
@@ -40,7 +40,7 @@
   gap: 7px;
   /* width: 32px; */
   padding: 12px 0 12px 12px;
-  width: 36px;
+  width: 32px;
   z-index: 1001;
 }
 
