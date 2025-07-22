@@ -2,21 +2,6 @@
   overflow: hidden;
 }
 
-
-/* bottom nav */
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 1000;
-  bottom: 0;
-  background-color : #f1f1f1;
-  width: 89.9vw;
-  height: 8vh;
-  box-sizing: border-box;
-} */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,10 +21,6 @@
 }
 
 .logo {
-  /* width: 28px;  
-  height: 28px; */
-  /* width: 32px;  
-  height: 32px; */
   width: 36px;  
   height: 36px;
   z-index: 1001;
@@ -65,18 +46,6 @@
 
 .hamburger-icon span {
   border-bottom: 2.5px solid #f1f1f1;
-}
-
-.hamburger-icon :nth-child(2) {
-    /* transform: scaleX(0.85);
-    transform-origin: right; */
-    /* width: 50%; */
-}
-
-.hamburger-icon :nth-child(3) {
-  /* transform: scaleX(0.5);
-  transform-origin: right; */
-  /* width: 50%; */
 }
 
 /*------------------------- Drawer ------------------------- */
@@ -113,13 +82,13 @@
   list-style-type: none;
 }
 
-
 .drawer-content li a {
   text-decoration: none;
   font-size: clamp(2.75rem, 7vw, 8.5rem);
   font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
 }
+
 /*------------------------- 768 Media Query ------------------------- */
 
 @media (min-width: 768px) {
