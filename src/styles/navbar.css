@@ -4,7 +4,7 @@
 
 
 /* bottom nav */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,10 +12,23 @@
   z-index: 1000;
   bottom: 0;
   background-color : #f1f1f1;
-  width: 90vw;
+  width: 89.9vw;
   height: 8vh;
-  /* padding: 10px 0; */
-  /* border-top: 2px solid black; */
+  box-sizing: border-box;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  background-color : #010101;
+  width: 100vw;
+  height: 8vh;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
    
 .navbar li a {
@@ -30,6 +43,7 @@
   width: 36px;  
   height: 36px;
   z-index: 1001;
+  fill: #f1f1f1;
 }
 
 .hamburger {
@@ -50,7 +64,7 @@
 }
 
 .hamburger-icon span {
-  border-bottom: 2.5px solid #010101;
+  border-bottom: 2.5px solid #f1f1f1;
 }
 
 .hamburger-icon :nth-child(2) {
@@ -115,6 +129,7 @@
     align-items: center;
     height: 8vh;
     width: 100%;
+    background-color : #f1f1f1;
     position: sticky;
     top: 0;
     bottom: unset;
@@ -152,6 +167,14 @@
 
   .navbar-list a:hover::after {
     width: 100%; 
+  }
+
+  .logo {
+    fill: #2B2B2B;
+  }
+
+  .hamburger-icon span {
+    border-bottom: 2.5px solid #2B2B2B;
   }
 }
 

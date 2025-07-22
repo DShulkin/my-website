@@ -62,7 +62,7 @@ background-color: #E2E2E3; */
 }
 
 body {
-  padding: 0 20px 15px 20px;
+  /* padding: 0 20px 15px 20px; */
   margin: 0;
   background-color: #f1f1f1;
   color: #010101;
@@ -70,6 +70,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+section {padding: 0 20px 15px 20px;}
 
 p, a {
   margin: 0;
