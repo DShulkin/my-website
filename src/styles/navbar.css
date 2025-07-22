@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 8px;
+  gap: 7px;
   /* width: 32px; */
   padding: 12px 0 12px 12px;
   width: 36px;
