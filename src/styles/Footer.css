@@ -1,6 +1,7 @@
 #footer {
   display: grid;
   gap: 16px;
+  margin-bottom: 59px;
 }
 
 .contact-info {
@@ -23,8 +24,17 @@
     height: 1.5em;
   }
 
-  @media (min-width: 1024px) { 
+  /*------------------------- 768 Media Query ------------------------- */
 
+  @media (min-width: 768px) { 
+    #footer {
+      margin-bottom: 0;
+    }
+  }
+
+/*------------------------- 1024 Media Query ------------------------- */
+
+  @media (min-width: 1024px) { 
     #footer {
       display: grid;
       gap: 0;

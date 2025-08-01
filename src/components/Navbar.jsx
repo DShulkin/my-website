@@ -5,10 +5,12 @@ function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { isMobile } = useBreakpoint()
 
-  const toggleDrawer = () => {
-    if (!drawerOpen) { // When the drawer is closed (!drawerOpen is true), the function adds the no-scroll 
+   const toggleDrawer = () => {
+    if (!drawerOpen) {    
+      // drawer is currently closed (drawerOpen === false) → opening it: add no-scroll to <body>
       document.body.classList.add('no-scroll')
-    } else {          // When the drawer is open (drawerOpen is true), the function removes the no-scroll 
+    } else {          
+      // drawer is currently open (drawerOpen === true) → closing it: remove no-scroll from <body>
       document.body.classList.remove('no-scroll')
     }
     setDrawerOpen(!drawerOpen)
