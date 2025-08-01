@@ -68,7 +68,7 @@ textarea:focus {
   display: flex;
   place-self: start;
   align-items: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .arrow {
