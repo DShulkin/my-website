@@ -13,7 +13,7 @@ function Contact() {
     setFormData((prevData) => ({ ...prevData, [name]: value }))
   }
 
-  // Handle form submission and send data to the server
+  // Handle form submission and send data to the server / prevents page from refreshing after the data is sent
   const handleSubmit = async (e) => {
     e.preventDefault()
 

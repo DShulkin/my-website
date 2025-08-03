@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr; 
   gap: 48px;
-  height: 74vh;
+  height: 77vh;
 }
 
 .contact-header {
