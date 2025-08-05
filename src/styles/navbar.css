@@ -1,7 +1,5 @@
 .no-scroll {
   overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
 
 .navbar {
@@ -73,19 +71,19 @@
   pointer-events: all;
 }
 
-/* .drawer-content ul {
+.drawer-content ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 16px;
   height: 100vh;
   margin: 0;
   padding: 0;
   list-style-type: none;
-} */
+}
 
-.drawer-content ul {
+/* .drawer-content ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -96,7 +94,7 @@
     padding: 0 20px;
     list-style-type: none;
     align-content: flex-end;
-}
+} */
 
 
 .drawer-content li a {
