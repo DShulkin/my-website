@@ -9,9 +9,11 @@ function Navbar() {
     if (!drawerOpen) {    
       // drawer is currently closed (drawerOpen === false) → opening it: add no-scroll to <body>
       document.body.classList.add('no-scroll')
+      logo.style.filter = "opacity(.01)"
     } else {          
       // drawer is currently open (drawerOpen === true) → closing it: remove no-scroll from <body>
       document.body.classList.remove('no-scroll')
+      logo.style.filter = "opacity(1)"
     }
     setDrawerOpen(!drawerOpen)
   }
