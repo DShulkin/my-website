@@ -27,6 +27,8 @@
   fill: #f1f1f1;
 }
 
+
+
 .hamburger {
   display: block;
   cursor: pointer;
@@ -69,7 +71,7 @@
   pointer-events: all;
 }
 
-.drawer-content ul {
+/* .drawer-content ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,12 +81,28 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+} */
+
+.drawer-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 16px;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-content: flex-end;
 }
+
 
 .drawer-content li a {
   text-decoration: none;
-  font-size: clamp(2.75rem, 7vw, 8.5rem);
-  font-family: 'StaraBold', 'Quattrocento Sans', sans-serif;
+  /* font-size: clamp(2.75rem, 7vw, 8.5rem); */
+  font-size: clamp(3rem, 7vw, 8.5rem);
+  /* font-family: 'StaraBold', 'Quattrocento Sans', sans-serif; */
+  font-family: 'StaraExtBd', 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
 }
 

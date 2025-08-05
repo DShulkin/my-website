@@ -110,7 +110,8 @@ textarea:focus {
   @media (min-width: 1024px) {
 
     #contact {
-      height: 92vh;
+      /* height: 92vh; */
+      height: 88vh;
       max-width: 2100px;
     }
 
@@ -145,5 +146,15 @@ textarea:focus {
     .input-group {
       width: 50%;
     }
+
   }
+
+  /*------------------------- 1440 Media Query ------------------------- */
   
+  @media (min-width: 1440px) {
+
+      label, input, textarea {
+      font-size: 1.125em;
+    }
+
+  }
