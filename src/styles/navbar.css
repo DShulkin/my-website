@@ -71,7 +71,7 @@
   pointer-events: all;
 }
 
-.drawer-content ul {
+/* .drawer-content ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,9 +81,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
+} */
 
-/* .drawer-content ul {
+.drawer-content ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -94,7 +94,7 @@
     padding: 0 20px;
     list-style-type: none;
     align-content: flex-end;
-} */
+}
 
 
 .drawer-content li a {
