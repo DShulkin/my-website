@@ -5,13 +5,36 @@ function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { isMobile } = useBreakpoint()
 
-   const toggleDrawer = () => {
-    if (!drawerOpen) {    
-      // drawer is currently closed (drawerOpen === false) → opening it: add no-scroll to <body>
-      document.body.classList.add('no-scroll')
-    } else {          
-      // drawer is currently open (drawerOpen === true) → closing it: remove no-scroll from <body>
-      document.body.classList.remove('no-scroll')
+  //  const toggleDrawer = () => {
+  //   if (!drawerOpen) {    
+  //     // drawer is currently closed (drawerOpen === false) → opening it: add no-scroll to <body>
+  //     document.body.classList.add('no-scroll')
+  //   } else {          
+  //     // drawer is currently open (drawerOpen === true) → closing it: remove no-scroll from <body>
+  //     document.body.classList.remove('no-scroll')
+  //   }
+  //   setDrawerOpen(!drawerOpen)
+  // }
+
+  let scrollY = 0 
+  const toggleDrawer = () => {
+    if (!drawerOpen) {
+    scrollY = window.scrollY
+
+      document.body.style.positiom = "fixed"
+      document.body.style.top = `-${scrollY}px`
+      document.body.style.left = "0"
+      document.body.style.right = "0"
+      document.body.style.wdidth = "100%"
+
+    } else {
+      document.body.style.positiom = ""
+      document.body.style.top = ""
+      document.body.style.left = ""
+      document.body.style.right = ""
+      document.body.style.wdidth = ""
+
+      window.scrollTo(scrollY)
     }
     setDrawerOpen(!drawerOpen)
   }
