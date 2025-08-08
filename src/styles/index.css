@@ -75,6 +75,10 @@ section {
   padding: 0 20px 15px 20px;
 }
 
+section:nth-child(3) {
+  padding-top: 20px;
+}
+
 div > section {
   padding: 0 20px 0px 20px;
 }
