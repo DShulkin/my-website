@@ -8,14 +8,3 @@ export default function ApiDirectory({projectImage}) {
     </div>
   )
 }
-
-
-// export default function ApiDirectory({projectImage}) {
-//   return (
-//       <div 
-//         className={styles.apiImage}
-//         style={{backgroundImage: `url(${projectImage})`}}
-//       >
-//       </div>
-//   )
-// }

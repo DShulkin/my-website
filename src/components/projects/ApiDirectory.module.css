@@ -1,24 +1,13 @@
-/* .apiContainer {
+.apiContainer {
+  width: 50%;
   display: flex;
-  align-items: center;
-  height: 100%;
-  margin: auto;
-  border: 1px solid black;
-  margin: 0 auto
-} */
+  justify-content: center;
+}
 
 .apiImage {
   width: 515px;
   height: 515px;
 }
-
-/* .apiImage {
-  background-size: cover;
-  background-position: center;
-  width: 515px;
-  height: 515px;
-} */
-
 
 /*------------------------- 1600 Media Query ------------------------- */
 
@@ -26,20 +15,4 @@
   .apiImageContainer {
     margin: 0 auto;
   }
-
-  /* .apiImage {
-  background-size: cover;
-  background-position: center;
-  width: clamp(1vw, 30vw, 700px);
-  height: auto;
-} */
-
 }
-
-/* @media (min-width: 1920px) {
-
-  .apiImage {
-    margin-right: 7em;
-  }
-
-} */
