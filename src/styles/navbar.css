@@ -144,26 +144,3 @@
     border-bottom: 2.5px solid #2B2B2B;
   }
 }
-
-
-/*------------------------- 1440 Media Query ------------------------- */
-
-/* @media (min-width: 1440px) {
-  .navbar-list {
-    gap: 5.4em;
-  }
-}
-
-
-@media (min-width: 1600px) {
-  .navbar-list {
-    gap: 7.6em;
-  }
-}
-
-@media (min-width: 1920px) {
-  .navbar-list {
-    gap: 9.25em;
-  }
-}
-  */

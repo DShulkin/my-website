@@ -60,7 +60,7 @@ function Projects() {
                   <p>{project.content}</p>
 
                   <button
-                    onClick={() => window.open(`${project.gitHubLink}`, "_blank")}
+                    onClick={() => window.open(`${project.demo}`, "_blank")}
                     aria-label="View Interactive Project"
                   >
                     <svg
