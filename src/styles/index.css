@@ -54,8 +54,8 @@ background-color: #E2E2E3; */
 
 @font-face {
   font-family: 'StaraBlack';
-  src: url('/public/fonts/stara-black.woff2') format('woff2'),
-       url('/public/fonts/stara-black.woff') format('woff');
+  src: url('/fonts/stara-black.woff2') format('woff2'),
+       url('/fonts/stara-black.woff') format('woff');
   font-style: normal;
   font-weight: 900;
   text-rendering: optimizeLegibility;
