@@ -104,11 +104,11 @@
   pointer-events: auto;
 }
 
-/* Paragraph spacing inside content */
-.accordion-content p {
+
+/* .accordion-content p {
   font-size: 1.125em;
   line-height: 22px;
-}
+} */
 
 .accordion-content > button {
   background-color: transparent;
