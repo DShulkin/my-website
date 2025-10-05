@@ -1,9 +1,16 @@
 #about  {
     /* height: 100vh; */
 }
+
+.about-hero {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-header {
     display: flex;
     align-items: center;
+    margin-bottom: 45%;
 }
 
 .about-header::before {
@@ -11,7 +18,7 @@
     flex: 1;
     height: 3px;
     background-color: #010101;
-    margin-right: 5%;
+    margin-right: 3%;
 } 
 
 .name-header {
@@ -26,8 +33,7 @@
     font-size: clamp(3rem, 7vw, 8.5rem);
     line-height: clamp(2.6rem, 6vw, 7.5rem);
     text-transform: uppercase;
-    margin: 0;
-
+    margin: 0 0 8px 0;
 }
 
 /* .photo-wrapper {
@@ -43,7 +49,8 @@
     font-family: 'StaraBold';
     text-transform: uppercase;
     text-align: right;
-    margin-top: 0;
+    margin-top: 2px;
+    font-size: 21.2px;
 
     /* display: flex;
     flex-wrap: wrap;
@@ -63,4 +70,13 @@
 .skills-header + p {
     text-transform: uppercase;
     text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .accordion-.about-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }

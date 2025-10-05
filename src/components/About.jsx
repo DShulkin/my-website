@@ -5,15 +5,15 @@ import profilePhoto from '../assets/profile-photo.jpg'
 function About() {
   return (
     <section id="about">
-      <h1 className="about-header">About</h1>
-      <h2 className="name-header">David Chemrukov</h2>
-      
-      <div className="photo-wrapper">
-        <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
+      <div className="about-hero">
+        <h1 className="about-header">About</h1>
+        <h2 className="name-header">David Chemrukov</h2>
+        <div className="photo-wrapper">
+          <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
+        </div>
       </div>
 
       <h3 className="role-header">Software Engineer / Graphic Designer</h3>
-
       <p>I'm driven by problem-solving and the challenge of simplifying complex ideas. I approach each project with creativity and a detective mindset—curious, precise, and determined to find the best solution.</p>
       <p>With a minimalist approach, I design visual frameworks that reflect the brand's essence and guide development toward cohesive, user-centric applications.</p>
       <p>Efficiency and scalability shape my work. I build reliable functionality and intuitive interactions, supported by thorough testing to ensure lasting performance.</p>

@@ -1,10 +1,6 @@
 function Footer() {
   return (
     <footer id="footer">
-      <div className="contact-info">
-        <p>+1 317-657-7013</p>
-        <p>davidshulkin93@gmail.com</p>
-      </div>
 
       <div className="social-icon-container">
         {/* GitHub Icon */}

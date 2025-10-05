@@ -4,14 +4,6 @@
   margin-bottom: 59px;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 2; 
-  }
-
   .social-icon-container {
     display: flex;
     flex-direction: row;
