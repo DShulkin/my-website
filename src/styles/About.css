@@ -10,7 +10,7 @@
 .about-header {
     display: flex;
     align-items: center;
-    margin-bottom: 45%;
+    margin-bottom: 52%;
 }
 
 .about-header::before {
@@ -21,7 +21,7 @@
     margin-right: 3%;
 } 
 
-.name-header {
+.about-name {
     /* font-family: "StaraBlack";
     font-size: clamp(3.15rem, 9vw, 11rem); */
     /* text-align: right; */
@@ -43,6 +43,12 @@
 .profile-photo {
     width: 100%;
     height: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.6em;
 }
 
 .role-header {
@@ -78,6 +84,7 @@
 .skills-header + p {
     text-transform: uppercase;
     text-align: justify;
+    line-height: 1.4r   em;
 }
 
 @media (min-width: 768px) {
