@@ -46,11 +46,12 @@
 }
 
 .role-header {
-    font-family: 'StaraBold';
+    font-family: 'StaraMed';
+    font-size: 20px;
     text-transform: uppercase;
     text-align: right;
     margin-top: 2px;
-    font-size: 21.2px;
+    margin-bottom: 0;
 
     /* display: flex;
     flex-wrap: wrap;
@@ -60,6 +61,13 @@
     font-family: 'StaraBold';
     text-align: right;
     text-transform: uppercase; */
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* line-height: 28px; */
 }
 
 .skills-header {
