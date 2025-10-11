@@ -10,8 +10,7 @@
 .about-header {
     display: flex;
     align-items: center;
-    /* margin-bottom: 57%; */
-     margin-bottom: 22%;
+    margin-bottom: 21%;
 }
 
 .about-header::before {
