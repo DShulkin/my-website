@@ -13,7 +13,7 @@ function About() {
         </div>
       </div>
 
-      <div className='about-content'>
+      <div className='about-content'> 
         <div className='about-text'>
           <h3 className="role-header">Software Engineer / Graphic Designer</h3>
           <p>I'm driven by problem-solving and the challenge of simplifying complex ideas. I approach each project with creativity and a detective mindset—curious, precise, and determined to find the best solution.</p>

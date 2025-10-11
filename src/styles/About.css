@@ -22,24 +22,15 @@
 } 
 
 .about-name {
-    /* font-family: "StaraBlack";
-    font-size: clamp(3.15rem, 9vw, 11rem); */
-    /* text-align: right; */
-
-    /* font-family: 'StaraExtBd';
-    font-size: clamp(3.25rem, 7vw, 8.5rem);
-    line-height: clamp(3rem, 6vw, 7.5rem); */
-
     font-size: clamp(3rem, 7vw, 8.5rem);
-    /* line-height: clamp(2.6rem, 6vw, 7.5rem); */
     line-height: clamp(2.7rem, 6vw, 7.5rem);
     text-transform: uppercase;
     margin: 0 0 8px 0;
 }
 
-/* .photo-wrapper {
+.photo-wrapper {
   mix-blend-mode: multiply;
-} */
+}
 
 .profile-photo {
     width: 100%;
@@ -49,8 +40,11 @@
 .about-content {
     display: flex;
     flex-direction: column;
-    gap: 4.6em;
+    justify-content: space-between;
+    height: 90vh;
+    /* gap: 4.6em; */
 }
+
 
 .role-header {
     font-family: 'StaraMed';
@@ -73,9 +67,14 @@
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5em;
+    /* min-height: 54svh; */
     /* line-height: 28px; */
 }
+
+/* .about-text p:nth-child(-n + 3) {
+    padding-bottom: 1.5em;
+} */
 
 .skills-header {
     text-transform: uppercase;
@@ -85,7 +84,7 @@
 .skills-header + p {
     text-transform: uppercase;
     text-align: justify;
-    line-height: 1.4r   em;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
