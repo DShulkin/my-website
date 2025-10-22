@@ -23,10 +23,10 @@ function About() {
 
         <div className='skills-container'>
           <h4 className="skills-header">Design:</h4>
-          <p>Photoshop Illustrator Adobe XD Brand Identity Typography Grid systems Web Design UX/UI</p>
+          <p>Photoshop Illustrator Adobe XD Brand Identity Typography Grid Systems Web Design UX/UI</p>
         
           <h4 className="skills-header">Programming:</h4>
-          <p>HTML (S)CSS Javascript Typescript (ES6+) Bootstrap Django React JSX next.js JSON APIs git Bash Shell</p>
+          <p>HTML (S)CSS Javascript Typescript (ES6+) Bootstrap Django React JSX next.js JSON APIs git Bash Shell XML</p>
           <img></img>
         </div>
       </div>

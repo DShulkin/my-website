@@ -150,3 +150,11 @@ label {
     align-self: end; /* Align Footer to the baseline of Contact */
   }
 }
+
+  @media (min-width: 2560px) {
+  body {
+    max-width: 2560px;
+    margin: 0 auto; /* keeps it centered */
+    overflow-x: hidden; /* prevents horizontal scrollbars */
+  }
+}

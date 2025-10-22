@@ -22,7 +22,8 @@
 } 
 
 .about-name {
-    font-size: clamp(3rem, 7vw, 8.5rem);
+    /* font-size: clamp(3rem, 7vw, 8.5rem); */
+    font-size: clamp(3rem, 7.9vw, 8.5rem);
     line-height: clamp(2.7rem, 6vw, 7.5rem);
     text-transform: uppercase;
     margin: 0 0 8px 0;
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     /* gap: 4.6em; */
 }
 
@@ -84,14 +85,53 @@
 .skills-header + p {
     text-transform: uppercase;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
 }
 
 @media (min-width: 768px) {
-  .accordion-.about-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
+
+  .about-header {
+    order: 2;
+    margin-bottom: revert;
+  } 
+
+  .about-name {
+    order: 3;
+    /* margin-left: auto; */
+  }
+
+  .photo-wrapper {
+    order: 1;
+  }
+
+  .about-text {
+    position: relative;
+  }
+
+  .about-text p {
+    /* width: 71%; */
+    /* margin-left: auto; */
+    text-transform: uppercase;
+  }
+
+  .about-text p:first-of-type::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px; 
+    background-color: #010101; 
+    margin-top: .6rem;
+  }
+
+  .role-header {
+    font-family: "StaraExtBd";
+    font-size: 1.63em;
+    text-align: revert;
+  }
+
+  .skills-container {
+    width: 70%;
+    margin-right: auto;
   }
 }
