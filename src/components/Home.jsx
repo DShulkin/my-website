@@ -15,7 +15,7 @@ function Home() {
           </div> 
         )}
 
-     <h1 className="homeHeader">
+     <h1 className="home-header">
         <span className="first-half">CREATIVE <br/>DEVELOPER <br/> BASED IN INDIANAPOLIS </span>
         <span className="second-half">CRAFTING DIGITAL <br/> DREAMS INTO <br/>REALITY </span>
      </h1> 

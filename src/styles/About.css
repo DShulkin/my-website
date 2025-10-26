@@ -55,6 +55,8 @@
     margin-top: 2px;
     margin-bottom: 0;
 
+    /* font-size: 1.42em; */
+
     /* display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -90,13 +92,24 @@
 
 @media (min-width: 768px) {
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* margin-top: 48.026px; */
+  }
+
   .about-header {
     order: 2;
-    margin-bottom: revert;
+    margin: 20px 0;
+    /* margin-top: revert; */
   } 
 
   .about-name {
     order: 3;
+    margin: 0;
+    margin-bottom: 24px;
+    /* font-family: 'StaraMed'; */
     /* margin-left: auto; */
   }
 
@@ -106,6 +119,7 @@
 
   .about-text {
     position: relative;
+    gap: 2em;
   }
 
   .about-text p {
@@ -121,13 +135,14 @@
     width: 100%;
     height: 2px; 
     background-color: #010101; 
-    margin-top: .6rem;
+    margin: .8em 0;
   }
 
   .role-header {
     font-family: "StaraExtBd";
     font-size: 1.63em;
     text-align: revert;
+    margin-bottom: calc(-1.75rem); /* fake removes the gap for this element */
   }
 
   .skills-container {
