@@ -108,7 +108,7 @@
   .about-name {
     order: 3;
     margin: 0;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
     /* font-family: 'StaraMed'; */
     /* margin-left: auto; */
   }
@@ -120,12 +120,17 @@
   .about-text {
     position: relative;
     gap: 2em;
+    /* margin-left: auto; <------ FOR DESKTOP SIZE */
+  }
+
+  .about-content {
+    min-height: 58vh;
   }
 
   .about-text p {
     /* width: 71%; */
     /* margin-left: auto; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   .about-text p:first-of-type::after {
