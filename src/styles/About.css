@@ -5,12 +5,15 @@
 .about-hero {
     display: flex;
     flex-direction: column;
+    
+    min-height: 86vh;
 }
 
 .about-header {
     display: flex;
     align-items: center;
-    margin-bottom: 21%;
+    /* margin-bottom: 21%; */
+    margin-bottom: auto;
 }
 
 .about-header::before {
