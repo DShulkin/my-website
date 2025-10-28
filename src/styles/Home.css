@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 77vh;
+  height: 87vh;
 }
 
 .logo {
@@ -16,7 +16,7 @@
   animation: slideUp .8s ease forwards;
   opacity: 0; 
   align-self: end;
-  margin: 0;
+  margin: 0 0 13vw 0;
 }
 
 @keyframes slideUp {
@@ -32,11 +32,11 @@
 
 /*------------------------- /HOME ------------------------- */ 
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #home {
       margin-bottom: 19vw;
   }
-}
+} */
 
 @media (min-width: 768px) {
 
