@@ -32,12 +32,6 @@
 
 /*------------------------- /HOME ------------------------- */ 
 
-/* @media (max-width: 767px) {
-  #home {
-      margin-bottom: 19vw;
-  }
-} */
-
 @media (min-width: 768px) {
 
   #home {
