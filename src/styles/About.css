@@ -10,7 +10,7 @@
 .about-header {
     display: flex;
     align-items: center;
-    margin-bottom: 19vw;
+    margin-bottom: 18vw;
 }
 
 .about-header::before {
@@ -51,7 +51,7 @@
 .role-header {
     /* font-family: 'StaraMed'; */
     font-family: 'StaraBold';
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: right;
     margin-top: 2px;
