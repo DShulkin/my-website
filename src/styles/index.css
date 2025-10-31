@@ -11,12 +11,6 @@ background-color: #E2E2E3; */
 /* background-color: #f0f0f0; */
 /* color: #2B2B2B; */
 
-   
-/* html {
-  scroll-padding-top: 14vh; 
-  Adjust this value to match your navbar height 
-} */
-
 @font-face {
   font-family: 'StaraMed';
   src: url('/fonts/stara-medium.woff2') format('woff2'),
@@ -71,25 +65,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* section {
-  padding: 0 20px 15px 20px;
-} */
-
-section {
+section, footer {
   margin: 0 20px 0px 20px;
 }
 
-
 section:nth-child(3) {
   padding-top: 20px;
-}
-
-/* div > section {
-  padding: 0 20px 0px 20px;
-} */
-
-footer {
-  padding: 0 20px;
 }
 
 p, a {
@@ -97,7 +78,6 @@ p, a {
   font-family: inherit;
   color: inherit;
   font-size: 1.125em;
-  /* line-height: 22px; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,24 +87,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* h1.homeHeader */
 h1 {
-  /* font-size: clamp(3.05rem, 7vw, 9rem);
-  line-height: clamp(2.7rem, 6vw, 8rem); */
-  /* font-size: clamp(2.75rem, 7vw, 8.5rem);
-  line-height: clamp(2.4rem, 6vw, 7.5rem); */
-
-
-
-
-    font-size: clamp(2.8rem, 7vw, 8.5rem);
-    line-height: clamp(2.5rem, 6vw, 7.5rem);
-/* 
-  font-size: clamp(3rem, 7vw, 8.5rem);
-  line-height: clamp(2.6rem, 6vw, 7.5rem); */
+  font-size: clamp(2.8rem, 7vw, 8.5rem);
+  line-height: clamp(2.5rem, 6vw, 7.5rem);
   text-transform: uppercase;
 }
 
 label {
   font-weight: 500;
+}
+
+.contact-footer-container {
+    display: grid;
+    margin-bottom: 59px;
+    min-height: 93svh;
+    grid-template-rows: auto;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 59px;
+    min-height: 93svh; */
 }
 
 @media (min-width: 768px) {
@@ -144,10 +126,10 @@ label {
 
 
   .contact-footer-container {
-    display: grid;
-    grid-template-rows: auto; /* Let the rows adjust based on their content */
-    align-items: end; /* Align the second row to the baseline of the first */
-    position: relative; /* Set up for positioning adjustment if needed */
+    /* display: grid; */
+    /* grid-template-rows: auto; */       /* Let the rows adjust based on their content */
+    align-items: end;                    /*  Align the second row to the baseline of the first */
+    /* position: relative; */           /*   Set up for positioning adjustment if needed */
   }
 
   .contact-footer-container > *:last-child {
