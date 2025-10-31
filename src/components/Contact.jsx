@@ -50,6 +50,7 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
+            autocomplete="on"
             maxLength={32}
             required
             // autoFocus
@@ -65,6 +66,7 @@ function Contact() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
+            autocomplete="on"
             maxLength={32}
             required
           />
