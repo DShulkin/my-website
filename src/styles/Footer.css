@@ -1,6 +1,6 @@
 #footer {
-  /* display: grid; */
-  /* gap: 16px; */
+  display: grid;
+  gap: 16px;
   margin-bottom: 59px;
 }
 
@@ -39,7 +39,3 @@
       z-index: 1;
     }
   }
-
-
-
-

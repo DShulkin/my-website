@@ -97,24 +97,10 @@ label {
 }
 
 .contact-footer-container {
-    display: flex;
+    display: grid;
     min-height: 100vh;
     min-height: 100svh;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    /* display: grid; */
-    /* margin-bottom: 59px; */
-    /* min-height: 100vh;
-    min-height: 100svh;
-    grid-template-rows: auto; */
-    /* grid-template-rows: 7fr 1fr; */
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 59px;
-    min-height: 93svh; */
+    grid-template-rows: auto; 
 }
 
 @media (min-width: 768px) {
