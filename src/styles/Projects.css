@@ -1,6 +1,7 @@
 #projects {
   display: flex;
   flex-direction: column;
+  min-height: 82vh;
 }
 
 .projects-container {
@@ -8,7 +9,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 82vh;
+  /* min-height: 82vh; */
 }
 
 .accordion-container {
