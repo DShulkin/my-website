@@ -98,7 +98,9 @@ label {
 
 .contact-footer-container {
     display: grid;
-    grid-template-rows: auto; 
+    grid-template-rows: 1fr auto; 
+    min-height: 100vh;   /* fallback for old browsers */
+    min-height: 100svh;  
 }
 
 @media (min-width: 768px) {
@@ -118,10 +120,10 @@ label {
 
 
   .contact-footer-container {
-    /* display: grid; */
-    /* grid-template-rows: auto; */       /* Let the rows adjust based on their content */
-    align-items: end;                    /*  Align the second row to the baseline of the first */
-    /* position: relative; */           /*   Set up for positioning adjustment if needed */
+    display: grid;
+    grid-template-rows: auto;        
+    align-items: end;                
+    position: relative;          
   }
 
   .contact-footer-container > *:last-child {
