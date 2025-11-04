@@ -99,8 +99,8 @@ label {
 .contact-footer-container {
     display: grid;
     grid-template-rows: 1fr auto; 
-    min-height: 100vh;   /* fallback for old browsers */
-    min-height: 100svh;  
+    min-height: 90vh;   /* fallback for old browsers */
+    min-height: 90svh;  
 }
 
 @media (min-width: 768px) {
