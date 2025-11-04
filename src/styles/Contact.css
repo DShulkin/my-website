@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 48px;
-  min-height: 88vh;
+  /* min-height: 88vh; */
 }
 
 .contact-header {

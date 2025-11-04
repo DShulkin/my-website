@@ -99,6 +99,7 @@ label {
 .contact-footer-container {
     display: grid;
     grid-template-rows: 1fr auto; 
+    min-height: 100svh;
 }
 
 @media (min-width: 768px) {
