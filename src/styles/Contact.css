@@ -3,7 +3,7 @@
   grid-template-rows: auto 1fr; 
   gap: 48px;
   min-height: 80vh; /*fallback */
-  /* min-height: 100svh; */
+  min-height: 80svh;
 }
 
 .contact-header {
