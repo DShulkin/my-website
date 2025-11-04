@@ -97,11 +97,17 @@ label {
 }
 
 .contact-footer-container {
-    display: grid;
-    /* margin-bottom: 59px; */
+    display: flex;
     min-height: 100vh;
     min-height: 100svh;
-    grid-template-rows: auto;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    /* display: grid; */
+    /* margin-bottom: 59px; */
+    /* min-height: 100vh;
+    min-height: 100svh;
+    grid-template-rows: auto; */
     /* grid-template-rows: 7fr 1fr; */
 
     /* display: flex;
