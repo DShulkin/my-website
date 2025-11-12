@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 84vh;
+  height: 87vh;
 }
 
 .logo {
@@ -30,10 +30,9 @@
   }
 } 
 
-/*------------------------- /HOME ------------------------- */ 
+/*------------------------- HOME ------------------------- */ 
 
 @media (min-width: 768px) {
-
   #home {
     align-items: flex-end;
     justify-content: flex-end;
@@ -54,10 +53,9 @@
   }
 }
 
-/*------------------------- /HOME ------------------------- */ 
+/*------------------------- HOME ------------------------- */ 
 
 @media (min-width: 1024px) {
-
   #home {
     height: 91vh;
   }
@@ -65,7 +63,7 @@
   .first-half {
     display: block;
     text-align: left;
-    }
+  }
   
   .second-half {
     display: block;
@@ -73,12 +71,10 @@
   }
 }
 
-/*------------------------- /HOME ------------------------- */ 
+/*------------------------- HOME ------------------------- */ 
 
 @media (min-width: 1440px) {
-
   #home {
-    height: 87vh;
+    height: 95vh;
   }
-
 }

@@ -50,7 +50,7 @@ textarea:focus {
 
 #message {
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 
 .submit-button {
@@ -81,20 +81,18 @@ textarea:focus {
   transform: translateX(10px); 
 }
 
-/*------------------------- 768 Media Query ------------------------- */
+/*------------------------- CONTACT ------------------------- */
 
   @media (min-width: 768px) {
-
-    #contact {
+    /* #contact {
       height: 84vh;
-    }
+    } */
 
-    .contact-header {
-      /* font-size: 7.3rem;
-      line-height: 6.5rem; */
+    /* .contact-header {
+      font-size: 7.3rem;
+      line-height: 6.5rem; 
       padding-top: 48px;
-      text-transform: uppercase;
-    }
+    } */
 
     .form-grid .input-group:nth-child(3) {
       width: 64%; 
@@ -106,23 +104,21 @@ textarea:focus {
     }
   }
   
-/*------------------------- 1024 Media Query ------------------------- */
+/*------------------------- CONTACT ------------------------- */
 
   @media (min-width: 1024px) {
-
-    #contact {
-      /* height: 92vh; */
-      height: 88vh;
-      max-width: 2100px;
-    }
+    /* #contact {
+      min-height: 89vh;
+      min-height: 89dvh;
+    } */
 
     .form-grid {
       grid-template-columns: 1fr 1fr 1.25fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr auto;
     }
 
     .form-grid .input-group:nth-child(3) {
-      width:70%; 
+      width: 100%; 
     }
     
     .contact-info {
@@ -142,18 +138,21 @@ textarea:focus {
       place-self: end start;
       cursor: pointer;
       z-index: 2;
+      /* padding: 7px; */
     }
 
     .input-group {
-      width: 50%;
+      width: 90%;
     }
 
+    #message {
+      height: 90%;
+    }
   }
 
-  /*------------------------- 1440 Media Query ------------------------- */
+  /*------------------------- CONTACT ------------------------- */
   
   @media (min-width: 1440px) {
-
       label, input, textarea, button, p {
       font-size: 1.125em;
     }

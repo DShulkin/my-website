@@ -12,7 +12,7 @@
   background-color : #010101;
   width: 100vw;
   height: 7vh;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   box-sizing: border-box;
 }
    
@@ -26,6 +26,12 @@
   z-index: 1001;
   fill: #f1f1f1;
 }
+
+/* @media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+} */
 
 .hamburger {
   display: block;
@@ -47,7 +53,7 @@
   border-bottom: 2.5px solid #f1f1f1;
 }
 
-/*------------------------- Drawer ------------------------- */
+/*------------------------- DRAWER ------------------------- */
 
 .drawer {
   position: fixed;
@@ -87,7 +93,7 @@
   text-transform: uppercase;
 }
 
-/*------------------------- 768 Media Query ------------------------- */
+/*------------------------- NAVBAR ------------------------- */
 
 @media (min-width: 768px) {
   .navbar {
@@ -142,5 +148,13 @@
 
   .hamburger-icon span {
     border-bottom: 2.5px solid #2B2B2B;
+  }
+}
+
+/*------------------------- NAVBAR ------------------------- */
+
+@media (min-width: 1440px) {
+  .navbar-list {
+      gap: 10.85em;
   }
 }
