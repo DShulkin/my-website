@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     /* margin-bottom: 15vh; */
-      margin: 0 0 15vh 0;
+     margin-bottom: 15vh;
 }
 
 .about-header::before {
