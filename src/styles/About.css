@@ -6,7 +6,8 @@
 .about-header {
     display: flex;
     align-items: center;
-    margin-bottom: 15vh;
+    /* margin-bottom: 15vh; */
+      margin: 0 0 15vh 0;
 }
 
 .about-header::before {

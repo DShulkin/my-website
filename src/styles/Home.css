@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 95vh;
+  height: 83vh;
+  margin-bottom: 15vh;
 }
 
 .logo {
@@ -16,7 +17,8 @@
   animation: slideUp .8s ease forwards;
   opacity: 0; 
   align-self: end;
-  margin: 0px 0 15vh 0;
+  margin: 0;
+  /* margin: 0px 0 15vh 0; */
 }
 
 @keyframes slideUp {
