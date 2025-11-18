@@ -79,8 +79,9 @@
     line-height: 1.4rem;
 }
 
-@media (min-width: 768px) {
+/*------------------------- ABOUT ------------------------- */
 
+@media (min-width: 768px) {
   #about {
     display: flex;
     flex-direction: column;
@@ -141,5 +142,35 @@
   .skills-container {
     width: 70%;
     margin-right: auto;
+  }
+}
+
+/*------------------------- ABOUT ------------------------- */
+@media (min-width: 1024px) {
+  .about-content {
+      min-height: 70vh;
+  }
+}
+/*------------------------- ABOUT ------------------------- */
+@media (min-width: 1440px) {
+ /* .about-name {
+    width: max-content;
+    margin-left: auto;
+  } */
+
+  .about-content {
+    min-height: 65vh;
+  }
+
+  /* .about-text {
+    width: 46%;
+  } */
+
+  .about-text p {
+    width: 40%;
+  }
+
+  .skills-container {
+    width: 40%;
   }
 }
