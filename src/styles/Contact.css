@@ -151,8 +151,8 @@ textarea:focus {
 
   /*------------------------- CONTACT ------------------------- */
   
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
       label, input, textarea, button, p {
       font-size: 1.125em;
     }
-  }
+  } */
