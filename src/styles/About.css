@@ -5,7 +5,7 @@
 .about-header {
   display: flex;
   align-items: center;
-  margin-bottom: 14vh;
+  margin-bottom: 13vh;
 }
 
 .about-header::before {
@@ -37,6 +37,7 @@
 
 .photo-wrapper {
   margin-bottom: 8px;
+  mix-blend-mode: multiply;
 }
 
 .profile-photo {
