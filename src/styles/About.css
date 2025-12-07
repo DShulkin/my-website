@@ -55,11 +55,10 @@
     border-bottom: 2px solid #010101;
 }
 
-.skills-header + p {
+/* .skills-header + p {
     text-transform: uppercase;
     text-align: justify;
-    /* line-height: 1.4rem; */
-}
+} */
 
 /*------------------------- ABOUT ------------------------- */
 

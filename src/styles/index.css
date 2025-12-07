@@ -81,6 +81,7 @@ body {
 p, a {
   font-family: inherit;
   font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  line-height: clamp(1.7rem, 1.5rem + 0.6vw, 2.2rem);
   color: inherit;
   margin: 0;
   margin-bottom: clamp(1.25rem, 2vw, 2rem);
