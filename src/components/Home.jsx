@@ -16,7 +16,7 @@ function Home() {
       )}
 
       <h1 className="home-header">
-        Creativer Developer Based In Indianapolis Crafting Digital Dreams Into Reality
+        Creative Developer Based In Indianapolis Crafting Digital Dreams Into Reality
         {/* Front-End Engineer Based In Indianapolis Crafting Digital Dreams Into Reality */}
         {/* <span className="first-half">Front-End Engineer <br/> Based in Indianapolis </span>
         <span className="second-half">Crafting Digital <br/> Dreams Into <br/>Reality </span> */}

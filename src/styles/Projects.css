@@ -126,8 +126,11 @@
 /*------------------------- PROJECTS ------------------------- */
 @media (min-width: 375px) {
   .accordion-title {
-    font-size: clamp(1.4rem, 2.2vw, 1.75rem);
-    line-height: clamp(2rem, 4.25vw, 2.75rem);
+    /* font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+    line-height: clamp(2rem, 4.25vw, 2.75rem); */
+
+      font-size: clamp(1.6rem, 3vw, 3.2rem);
+      line-height: clamp(1.0, 1.05, 1.1);
   }
 }
 

@@ -12,7 +12,7 @@
   content: '';
   flex: 1;
   height: 3px;
-  background-color: #010101;
+  background-color: var(--primary-color);
   margin-right: 3%;
 } 
 
@@ -45,8 +45,7 @@
 } */
 
 .skills-header {
-    text-transform: uppercase;
-    border-bottom: 2px solid #010101;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* .skills-header + p {
