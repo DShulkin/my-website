@@ -34,7 +34,7 @@
     },
     {
       "id": 5, 
-      "title": "05  /  Boostrap Site",
+      "title": "05  /  Bootstrap Site",
       "content": "Proin nec dui molestie, dignissim lorem non, ultrices enim. Nulla facilisi. Quisque vitae purus consequat, pretium sapien eget, finibus odio.",
       "projectImage": "/projectImgs/bootstrap_square.jpg",
       "gitHubLink": "https://github.com/DShulkin/BoostrapSite",

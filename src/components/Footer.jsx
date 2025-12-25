@@ -22,7 +22,7 @@ function Footer() {
 
         {/* LinkedIn Icon */}
         <a
-          href="https://www.linkedin.com/in/david-shulkin"
+          href="https://www.linkedin.com/in/davidchemrukov"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
