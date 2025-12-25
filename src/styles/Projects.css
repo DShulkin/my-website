@@ -121,8 +121,8 @@
     margin-bottom: 1.125rem;
   }
 
-.icon-container .project-icon {
-    width: 28px;
+.icon-container .social-icon {
+    width: 24px;
     fill: var(--primary-color);
   }
 

@@ -64,7 +64,7 @@ function Projects() {
                       aria-label="View Interactive Project"
                     >
                       <svg
-                        className="project-icon"
+                        className="social-icon"
                         strokeWidth="0"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +79,10 @@ function Projects() {
                       aria-label="Go to GitHub"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
                         className="social-icon"
-                        fill="currentColor"
+                        strokeWidth="0"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path d="M12,.2C5.4.2,0,5.6,0,12.3s3.4,9.9,8.2,11.5c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.5-4-1.5-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7,0-.7,0-.7,1.2.1,1.8,1.2,1.8,1.2,1.1,1.8,2.8,1.3,3.5,1,.1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6s.5-2.4,1.2-3.2c0-.3-.5-1.6.2-3.2,0,0,1-.3,3.3,1.2,1-.3,2-.4,3-.4s2,.2,3,.4c2.3-1.6,3.3-1.2,3.3-1.2.7,1.7.2,2.9.1,3.2.8.8,1.2,1.9,1.2,3.2,0,4.6-2.8,5.7-5.5,6,.4.4.8,1.1.8,2.2v3.3c0,.3.2.7.8.6,4.8-1.6,8.2-6.1,8.2-11.5C24,5.6,18.6.2,12,.2Z"/>
                       </svg>

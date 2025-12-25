@@ -4,11 +4,6 @@
   margin-bottom: 70px;
 }
 
-.icon-container .social-icon {
-    width: 28px;
-    fill: var(--primary-color);
-  }
-
   /*------------------------- FOOTER ------------------------- */
   @media (min-width: 768px) { 
     #footer {
