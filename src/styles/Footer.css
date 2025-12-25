@@ -4,14 +4,14 @@
   margin-bottom: 70px;
 }
 
-  .social-icon-container {
+  .icon-container {
     display: flex;
     flex-direction: row;
     place-self: end start;
     gap: 32px;
   }
 
-  .social-icon-container .social-icon {
+.icon-container .social-icon {
     width: 28px;
     /* height: 1.5em; */
   }

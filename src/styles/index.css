@@ -92,6 +92,14 @@ label {
   font-weight: 500;
 }
 
+button {
+  all: unset;            /* removes ALL default button styles */
+  display: inline-flex;  /* needed because all removes display */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 .contact-footer-container {
     display: grid;
     grid-template-rows: 1fr auto; 

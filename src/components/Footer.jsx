@@ -1,8 +1,7 @@
 function Footer() {
   return (
     <footer id="footer">
-
-      <div className="social-icon-container">
+      <div className="icon-container">
         {/* GitHub Icon */}
         <a
           href="https://github.com/dshulkin"
