@@ -4,28 +4,18 @@
   margin-bottom: 70px;
 }
 
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    place-self: end start;
-    gap: 32px;
-  }
-
 .icon-container .social-icon {
     width: 28px;
-    /* height: 1.5em; */
+    fill: var(--primary-color);
   }
 
   /*------------------------- FOOTER ------------------------- */
-
   @media (min-width: 768px) { 
     #footer {
       margin-bottom: 0;
     }
   }
-
  /*------------------------- FOOTER ------------------------- */
-
   @media (min-width: 1024px) { 
     #footer {
       display: grid;

@@ -79,7 +79,7 @@ h1 {
   line-height: clamp(2.8rem, 6vw, 7.5rem);
 }
 
-p, a {
+p {
   font-family: inherit;
   font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
   line-height: clamp(1.7rem, 1.5rem + 0.6vw, 2.2rem);
@@ -88,15 +88,16 @@ p, a {
   margin-bottom: clamp(1.25rem, 2vw, 2rem);
 }
 
+a {
+  color: inherit;
+}
+
 label {
   font-weight: 500;
 }
 
 button {
   all: unset;            /* removes ALL default button styles */
-  display: inline-flex;  /* needed because all removes display */
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 

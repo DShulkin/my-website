@@ -9,7 +9,6 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  /* min-height: 82vh; */
 }
 
 .accordion-container {
@@ -40,8 +39,8 @@
 }
 
 .accordion-title {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   transition: color 0.19s ease;
   font-family: "StaraBold";
   text-align: left;
@@ -52,8 +51,10 @@
 
 .accordion-icon {
   position: relative;
-  width: 12px;
-  height: 12px;
+  /* width: 12px;
+  height: 12px; */
+  width: 16px;
+  height: 16px;
   display: inline-block;
 }
 
@@ -125,13 +126,6 @@
     fill: var(--primary-color);
   }
 
-/* .project-icon {
-  width: 2.3em;
-  height: 1.5em;
-  padding: 20px 0 10px 0;
-  fill: var(--primary-color);
-} */
-
 .project-icon:hover {
   fill: #7c7c7c;
 }
@@ -148,7 +142,6 @@
 }
 
 /*------------------------- PROJECTS ------------------------- */
-
 @media (min-width: 768px) {
   .accordion-title {
     padding: 18px 0;
@@ -156,7 +149,6 @@
 }
 
 /*------------------------- PROJECTS ------------------------- */
-
 @media (min-width: 1440px) {
   .accordion-container {
     width: 50%;
