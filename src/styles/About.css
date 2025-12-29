@@ -47,13 +47,14 @@
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
     .about-name {
-      font-size: clamp(3.2rem, 8vw, 10rem);
+      font-size: clamp(3.2rem, 8vw, 9rem);
       line-height: clamp(1.0, 1.05, 1.1);
       margin: 0 0 px 0;
     }
 
     .about-title {
-      font-size: clamp(1.6rem, 3vw, 3.2rem);
+      /* font-size: clamp(1.6rem, 3vw, 3.2rem); */
+      font-size: clamp(1.6rem, 3vw, 2.8rem);
       line-height: clamp(1.0, 1.05, 1.1);
     }
   }

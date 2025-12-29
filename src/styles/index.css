@@ -7,6 +7,7 @@
 :root {
   --primary-color: #010101;
   --secondary-color: #f1f1f1;
+  --primary-hover: rgba(1, 1, 1, 0.5);
 }
 
 @font-face {
@@ -75,7 +76,8 @@ h1 {
   /* font-size: clamp(2.8rem, 7vw, 7.5rem);
   line-height: clamp(0.92, 0.98, 1.02); */
 
-  font-size: clamp(2.8rem, 7vw, 8.5rem);
+  /* font-size: clamp(2.8rem, 7vw, 8.5rem); */
+  font-size: clamp(2.8rem, 7vw, 7.5rem);
   line-height: clamp(2.8rem, 6vw, 7.5rem);
 }
 
