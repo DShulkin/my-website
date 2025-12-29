@@ -111,13 +111,13 @@
   padding: 0;
 }
 
- .icon-container {
-    display: flex;
-    flex-direction: row;
-    place-self: end start;
-    gap: 24px;
-    margin-bottom: 1.125rem;
-  }
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  place-self: end start;
+  gap: 24px;
+  margin-bottom: 1.125rem;
+}
 
 .icon-container .social-icon {
   width: 24px;
