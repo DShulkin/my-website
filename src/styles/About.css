@@ -59,8 +59,9 @@
     .about-name {
       font-size: clamp(3.2rem, 8vw, 10rem);
       /* line-height: clamp(3.2rem, 7.5vw, 9.5rem); */
-      line-height: clamp(1.1, 1.15, 1.2);
+      /* line-height: clamp(1.1, 1.15, 1.2); */
       margin: 0 0 px 0;
+      line-height: clamp(1.0, 1.05, 1.1);
     }
 
     .about-title {
