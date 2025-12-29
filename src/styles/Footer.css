@@ -1,7 +1,11 @@
 #footer {
   /* display: grid;
   gap: 16px; */
-  margin-bottom: 70px;
+  margin-bottom: 80px;
+}
+
+footer .icon-container {
+  margin-bottom: 0;
 }
 
   /*------------------------- FOOTER ------------------------- */
