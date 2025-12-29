@@ -78,6 +78,7 @@
 .drawer.open {
   opacity: 1;
   pointer-events: all;
+  filter: invert(1);
 }
 
 .drawer-content ul {
