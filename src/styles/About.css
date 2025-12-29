@@ -40,35 +40,19 @@
     height: auto;
 }
 
-/* .about-text p:nth-child(-n + 3) {
-    padding-bottom: 1.5em;
-} */
-
 .skills-header {
     border-bottom: 2px solid var(--primary-color);
 }
-
-/* .skills-header + p {
-    text-transform: uppercase;
-    text-align: justify;
-} */
-
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
     .about-name {
       font-size: clamp(3.2rem, 8vw, 10rem);
-      /* line-height: clamp(3.2rem, 7.5vw, 9.5rem); */
-      /* line-height: clamp(1.1, 1.15, 1.2); */
+      line-height: clamp(1.0, 1.05, 1.1);
       margin: 0 0 px 0;
-      /* line-height: clamp(1.0, 1.05, 1.1); */
-      line-height: 1
     }
 
     .about-title {
-      /* font-size: clamp(1.5rem, 1.3rem + 0.6vw, 2.25rem);
-      line-height: clamp(1.9rem, 1.6rem + 0.7vw, 2.7rem); */
-
       font-size: clamp(1.6rem, 3vw, 3.2rem);
       line-height: clamp(1.0, 1.05, 1.1);
     }

@@ -42,17 +42,16 @@
   font-size: 1.4rem;
   line-height: 1.6rem;
   transition: color 0.19s ease;
-  font-family: "StaraBold";
+  /* font-family: "StaraBold"; */
   text-align: left;
   padding: 16px 0;
   width: 100%;
   margin: 0;
+  font-family: 'StaraMed';
 }
 
 .accordion-icon {
   position: relative;
-  /* width: 12px;
-  height: 12px; */
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -133,14 +132,8 @@
 /*------------------------- PROJECTS ------------------------- */
 @media (min-width: 375px) {
   .accordion-title {
-    /* font-size: clamp(1.4rem, 2.2vw, 1.75rem);
-    line-height: clamp(2rem, 4.25vw, 2.75rem); */
-      /* font-size: clamp(1.5rem, 1.3rem + 0.6vw, 2.25rem);
-      line-height: clamp(1.9rem, 1.6rem + 0.7vw, 2.7rem); */
-
-      font-size: clamp(1.6rem, 3vw, 3.2rem);
-      /* line-height: clamp(1.0, 1.05, 1.1); */
-      line-height: 1.125;
+    font-size: clamp(1.6rem, 3vw, 3.2rem);
+    line-height: clamp(1.0, 1.05, 1.1);
   }
 }
 
