@@ -42,12 +42,11 @@
   font-size: 1.4rem;
   line-height: 1.6rem;
   transition: color 0.19s ease;
-  /* font-family: "StaraBold"; */
+  font-family: "StaraBold";
   text-align: left;
   padding: 16px 0;
   width: 100%;
   margin: 0;
-  font-family: 'StaraMed';
 }
 
 .accordion-icon {
@@ -121,12 +120,12 @@
   }
 
 .icon-container .social-icon {
-    width: 24px;
-    fill: var(--primary-color);
-  }
+  width: 24px;
+  fill: var(--primary-color);
+}
 
 .project-icon:hover {
-  fill: #7c7c7c;
+  color: rgba(1, 1, 1, 0.5);
 }
 
 /*------------------------- PROJECTS ------------------------- */
@@ -152,7 +151,7 @@
 
   .accordion-content > button:hover,
   .accordion-title:hover {
-    color: #7c7c7c;
+    color: rgba(1, 1, 1, 0.5);
     /* Prevent sticky hover on touch screens */
   }
 
