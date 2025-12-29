@@ -8,7 +8,7 @@ function About() {
       <div className="about-container">
         <h1 className="about-header">About</h1>
         <h2 className="about-name">David Chemrukov</h2>
-        <h3 className="about-title">Software Engineer / Graphic Designer</h3>
+        <h3 className="about-title">Front-End Engineer / Graphic Designer</h3>
 
         <div className="photo-wrapper">
           <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
