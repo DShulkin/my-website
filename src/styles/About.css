@@ -21,7 +21,8 @@
   font-size: 2.4rem;
   line-height: 2.6rem;
   width: min-content;
-  margin: 0 0 4px 0;
+  /* margin: 0 0 4px 0; */
+  margin: 0;
 }
 
 .about-title {
@@ -49,7 +50,6 @@
     .about-name {
       font-size: clamp(3.2rem, 8vw, 9rem);
       line-height: clamp(1.0, 1.05, 1.1);
-      margin: 0 0 px 0;
     }
 
     .about-title {
