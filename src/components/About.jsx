@@ -15,7 +15,7 @@ function About() {
         </div>
 
         <div className="about-intro">
-          <p>I guide users through visual design and typography. My work leans toward clarity—clean layouts, honest structure, and direct communication. I build digital experiences that make sense at a glance and feel effortless to use.</p>
+          <p>I design and build digital experiences that make sense at a glance and feel effortless to use. Guided by restraint, structure, and clarity, I let function lead every decision.</p>
         </div>
 
         <div className='about-paragraphs'>
