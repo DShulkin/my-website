@@ -20,7 +20,7 @@ function About() {
 
         <div className='about-paragraphs'>
           <p>I'm driven by problem-solving and the challenge of simplifying complex ideas. I approach every project with creativity and a detective's mindset—curious, precise, and determined to find the best solution.</p>
-          <p>Inspired by Swiss Minimalism, I design clear visual frameworks that capture a brand's essence and direct development toward cohesive, user-centric applications.</p>
+          <p>Inspired by Swiss Minimalism, I design visual frameworks that capture a brand's essence and direct development toward cohesive, user-centric applications.</p>
           <p>Efficiency and scalability shape my work. I build reliable functionality and intuitive interactions, supported by thorough testing to ensure long-term performance.</p>
         </div>
 
