@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import profilePhoto from '../assets/profile-photo4.jpg'
+import profilePhoto from '../assets/profile-photo2.jpg'
 
 function About() {
   return (
