@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import useBreakpoint from '@/hooks/useBreakpoint';
+import useBreakpoint from '@/hooks/useBreakpoint'
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { isMobile } = useBreakpoint()
 
-   const toggleDrawer = () => {
+  const toggleDrawer = () => {
     if (!drawerOpen) {    
-      // drawer is currently closed (drawerOpen === false) → opening it: add no-scroll to <body>
-      document.body.classList.add('no-scroll')
+      document.body.classList.add('no-scroll') 
+      /* drawer is CLOSED this runs BEFORE the drawer OPENS -  triggered by user interaction */
     } else {          
-      // drawer is currently open (drawerOpen === true) → closing it: remove no-scroll from <body>
       document.body.classList.remove('no-scroll')
+      /* drawer is OPEN, this runs BEFORE the drawer CLOSES - triggered by user interaction */
     }
     setDrawerOpen(!drawerOpen)
   }
@@ -55,7 +55,7 @@ function Navbar() {
           </div> 
         )}
         
-        {/* Only show hamburger and drawer on mobiile */}
+        {/* Only show hamburger and drawer on mobile */}
         {isMobile && (
           <>
             <div className="hamburger-icon" onClick={toggleDrawer}>

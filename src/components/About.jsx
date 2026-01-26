@@ -1,17 +1,37 @@
 import React from 'react'
+import useBreakpoint from '@/hooks/useBreakpoint'
 import Image from 'next/image'
 import profilePhoto from '../assets/profile-photo.jpg'
+import profilePhotoDesktop from '../assets/profile-photo-desktop.jpg'
+// import profilePhoto from '../assets/profile-photo-desktop.jpg'
 
 function About() {
+  const { isDesktop } = useBreakpoint()
   return (
     <section id="about">
       <div className="about-container">
         <h1 className="about-header">About</h1>
         <h2 className="about-name">David Chemrukov</h2>
         <h3 className="about-title">Front-End Engineer / Graphic Designer</h3>
+        
+        {/* {!isDesktop && (
+          <div className="photo-wrapper">
+            <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
+          </div>  
+        )}
+
+        {isDesktop && (
+          <div className="photo-wrapper">
+            <Image className="profile-photo" src={profilePhotoDesktop} alt="Picture of David Chemrukov" />
+          </div>  
+        )} */}
 
         <div className="photo-wrapper">
-          <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
+          <Image
+            className={"profile-photo"}
+            src={isDesktop ? profilePhotoDesktop : profilePhoto}
+            alt="Picture of David Chemrukov"
+          />
         </div>
 
         <div className="about-intro">
