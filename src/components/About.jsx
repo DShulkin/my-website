@@ -14,18 +14,6 @@ function About() {
         <h2 className="about-name">David Chemrukov</h2>
         <h3 className="about-title">Front-End Engineer / Graphic Designer</h3>
         
-        {/* {!isDesktop && (
-          <div className="photo-wrapper">
-            <Image className="profile-photo" src={profilePhoto} alt="Picture of David Chemrukov" />
-          </div>  
-        )}
-
-        {isDesktop && (
-          <div className="photo-wrapper">
-            <Image className="profile-photo" src={profilePhotoDesktop} alt="Picture of David Chemrukov" />
-          </div>  
-        )} */}
-
         <div className="photo-wrapper">
           <Image
             className={"profile-photo"}

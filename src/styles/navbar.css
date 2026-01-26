@@ -23,7 +23,8 @@
 }
    
 .navbar li a {
-  font-family: 'StaraMed', 'Quattrocento Sans', sans-serif;
+  /* font-family: 'Stara', 'Quattrocento Sans', sans-serif; */
+  font-weight: 400;
 }
 
 .logo {
@@ -93,10 +94,10 @@
 }
 
 .drawer-content li a {
-  text-decoration: none;
+  font-weight: 800;
   font-size: clamp(3rem, 7vw, 8.5rem);
-  font-family: 'StaraExtBd', 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*------------------------- NAVBAR ------------------------- */
@@ -128,7 +129,8 @@
   }
   
   .navbar-list li a {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 400;
     text-decoration: none;
     position: relative; 
   }
@@ -161,6 +163,6 @@
 
 @media (min-width: 1440px) {
   .navbar-list {
-      gap: 10.85em;
+      gap: 7em;
   }
 }

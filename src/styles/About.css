@@ -11,13 +11,13 @@
 .about-header::before {
   content: '';
   flex: 1;
-  height: 3px;
+  height: 2px;
   background-color: var(--primary-color);
   margin-right: 3%;
 } 
 
 .about-name {
-  font-family: 'StaraMed';
+  font-weight: 600;
   font-size: 2.4rem;
   line-height: 2.6rem;
   width: min-content;
@@ -25,7 +25,7 @@
 }
 
 .about-title {
-  font-family: 'StaraMed';
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -41,7 +41,7 @@
 }
 
 .skills-header {
-    border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /*------------------------- ABOUT ------------------------- */
@@ -53,54 +53,11 @@
 
     .about-title {
       /* font-size: clamp(1.6rem, 3vw, 3.2rem); */
-      font-size: clamp(1.6rem, 3vw, 2.8rem);
+      font-size: clamp(1.55rem, 3vw, 2.8rem);
       line-height: clamp(1.0, 1.05, 1.1);
     }
   }
 
-/*------------------------- ABOUT ------------------------- */
-/* @media (min-width: 768px) {
-  .photo-wrapper {
-    position: relative;  
-    width: 100%;
-    height: 600px;      
-    overflow: hidden;
-  }
-
-  .profile-photo {
-    object-fit: cover;
-    object-position: 50% 30%;
-  }
-} */
-
-/* @media (min-width: 768px) {
-  #about {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;  
-  }
-
-  .about-content {
-    min-height: 77vh;
-  }
-
-  .role-header {
-    font-family: "StaraExtBd";
-    font-size: 1.6rem;
-    text-align: revert;
-  }
-
-  .skills-container {
-    width: 70%;
-  }
-} */
-
-/*------------------------- ABOUT ------------------------- */
-/* @media (min-width: 1024px) {
-  .about-content {
-      min-height: 70vh;
-  }
-} */
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 1440px) {
  /* .about-name {
@@ -112,34 +69,15 @@
     min-height: 65vh;
   } */
 
-  .about-title {
-      letter-spacing: 0.04em;
+  .about-name {
+    font-weight: 500;
   }
 
-  /* .about-text {
-   flex-direction: row;
-  } */
+  .about-title {
+    font-weight: 600;
+  }
 
-  /* .about-text {
-    width: 45%;
-  } */
-
-    /* .about-text p {
-    width: 40%;
-  } */
-
-  /* .about-paragraphs{
-    justify-content: space-evenly;
-    gap: 4rem;
-  } */
-
-  /* .role-header {
-    font-size: 2.250rem;
-    font-size: 1.8rem;
-    width: max-content;
-  } */
-
-  /* .skills-container {
-    width: 40%;
-  } */
+  .about-title {
+    letter-spacing: 0.04em;
+  }
 }

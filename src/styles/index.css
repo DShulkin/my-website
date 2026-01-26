@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'StaraMed';
+  font-family: 'Stara';
   src: url('/fonts/stara-medium.woff2') format('woff2'),
        url('/fonts/stara-medium.woff') format('woff');
   font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: 'StaraSemBd';
+  font-family: 'Stara';
   src: url('/fonts/stara-semibold.woff2') format('woff2'),
        url('/fonts/stara-semibold.woff') format('woff');
   font-style: normal;
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: 'StaraBold';
+  font-family: 'Stara';
   src: url('/fonts/stara-bold.woff2') format('woff2'),
        url('/fonts/stara-bold.woff') format('woff');
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-  font-family: 'StaraExtBd';
+  font-family: 'Stara';
   src: url('/fonts/stara-extrabold.woff2') format('woff2'),
        url('/fonts/stara-extrabold.woff') format('woff');   
   font-style: normal;
@@ -46,7 +46,7 @@
 }
 
 @font-face {
-  font-family: 'StaraBlack';
+  font-family: 'Stara';
   src: url('/fonts/stara-black.woff2') format('woff2'),
        url('/fonts/stara-black.woff') format('woff');
   font-style: normal;
@@ -66,9 +66,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'StaraExtBd', 'Quattrocento Sans', sans-serif;
+  font-family: 'Stara', 'Quattrocento Sans', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
-  /* font-family: 'StaraBlack', 'Quattrocento Sans', sans-serif; */
   color: inherit;
 }
 
@@ -147,11 +147,6 @@ button {
     padding: 0 80px 40px 80px;
   }
 
-  /* p, a, label, input, textarea {
-    font-size: 1.25em;
-  } */
-
-
   .contact-footer-container {      
     /* align-items: end; */
     position: relative;          
@@ -163,10 +158,16 @@ button {
   }
 }
 
+  @media (min-width: 1440px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
   @media (min-width: 2560px) {
   body {
     max-width: 2560px;
-    margin: 0 auto; /* keeps it centered */
+    margin: 0 auto;
     overflow-x: hidden; /* prevents horizontal scrollbars */
   }
 }

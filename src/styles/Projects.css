@@ -39,10 +39,10 @@
 }
 
 .accordion-title {
+  transition: color .2s ease-in-out;
+  font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  transition: color .2s ease-in-out;
-  font-family: "StaraBold";
   text-align: left;
   padding: 16px 0;
   width: 100%;
