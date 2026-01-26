@@ -25,7 +25,7 @@
 }
 
 .about-title {
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -53,7 +53,7 @@
 
     .about-title {
       /* font-size: clamp(1.6rem, 3vw, 3.2rem); */
-      font-size: clamp(1.55rem, 3vw, 2.8rem);
+      font-size: clamp(1.6rem, 3vw, 2.8rem);
       line-height: clamp(1.0, 1.05, 1.1);
     }
   }
