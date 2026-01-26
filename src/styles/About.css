@@ -17,7 +17,7 @@
 } 
 
 .about-name {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.4rem;
   line-height: 2.6rem;
   width: min-content;
@@ -28,6 +28,7 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 8px;
+  /* letter-spacing: 0.015em; */
 }
 
 .photo-wrapper {
@@ -68,10 +69,6 @@
   /* .about-content {
     min-height: 65vh;
   } */
-
-  .about-name {
-    font-weight: 500;
-  }
 
   .about-title {
     font-weight: 600;
