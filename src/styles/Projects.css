@@ -132,8 +132,9 @@
 /*------------------------- PROJECTS ------------------------- */
 @media (min-width: 375px) {
   .accordion-title {
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     line-height: clamp(1.0, 1.05, 1.1);
+    /* font-size: clamp(1.6rem, 3vw, 2.2rem); */
   }
 }
 

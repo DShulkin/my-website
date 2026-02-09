@@ -28,7 +28,6 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 8px;
-  /* letter-spacing: 0.015em; */
 }
 
 .photo-wrapper {
@@ -48,8 +47,10 @@
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
     .about-name {
-      font-size: clamp(3.2rem, 8vw, 9rem);
+       font-size: clamp(3.2rem, 7.5vw, 9rem);
       line-height: clamp(1.0, 1.05, 1.1);
+      /* font-size: clamp(3.2rem, 8vw, 9rem); */
+      /* font-size: clamp(3.2rem, 7.5vw, 8rem); */
     }
 
     .about-title {
@@ -72,6 +73,13 @@
 
   .about-title {
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
+  }
+}
+/*------------------------- ABOUT ------------------------- */
+@media (min-width: 1920px) {
+  .about-name {
+    width: revert;
+    letter-spacing: -0.02em;
   }
 }
