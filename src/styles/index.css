@@ -72,12 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  /* font-size: clamp(2.8rem, 7vw, 7.5rem);
-  line-height: clamp(0.92, 0.98, 1.02); */
-
-  /* font-size: clamp(2.8rem, 7vw, 8.5rem); */
-  font-size: clamp(2.8rem, 7vw, 7.5rem);
-  line-height: clamp(2.8rem, 6vw, 7.5rem);
+  font-size: clamp(2.8rem, 6vw, 7rem);
+  line-height: clamp(2.8rem, 6vw, 7rem);
 }
 
 p {
