@@ -126,8 +126,8 @@ button {
 
   /*------------------------- INDEX ------------------------- */
 @media (min-width: 768px) {
-  body {
-    padding: 0 40px 30px 40px;
+  section, footer {
+    margin: 0 60px 30px 60px;
   }
 
   .contact-footer-container {
@@ -138,9 +138,9 @@ button {
 
   /*------------------------- INDEX ------------------------- */
 @media (min-width: 1024px) {  
-  body {
+  /* body {
     padding: 0 80px 40px 80px;
-  }
+  } */
 
   .contact-footer-container {      
     /* align-items: end; */

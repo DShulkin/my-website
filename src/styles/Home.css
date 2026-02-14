@@ -7,10 +7,7 @@
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
     z-index: 1001;
-    fill: #000000;
 }
 
 .home-header {
