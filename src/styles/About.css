@@ -1,9 +1,19 @@
 .about-container {
   display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "name"
+    "title"
+    "photo"
+    "intro"
+    "paragraphs"
+    "skills"
 }
 
 .about-header {
   display: flex;
+  grid-area: header;
   align-items: center;
   margin-bottom: 12vh;
 }
@@ -17,6 +27,7 @@
 } 
 
 .about-name {
+  grid-area: name;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 2.6rem;
@@ -25,12 +36,14 @@
 }
 
 .about-title {
+  grid-area: title;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 8px;
 }
 
 .photo-wrapper {
+  grid-area: photo;
   margin-bottom: 8px;
 }
 
@@ -41,13 +54,25 @@
 }
 
 .skills-header {
+  grid-area: skills;
   border-bottom: 2px solid var(--primary-color);
+}
+
+
+/*------------------------- nullifying the above /removing margins to compensate for grid gap ------------------------- */
+
+.about-header,
+.about-name,
+.about-title,
+.photo-wrapper,
+.about-paragraphs p {
+  margin: 0;
 }
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
     .about-name {
-       font-size: clamp(3.2rem, 7.5vw, 9rem);
+      font-size: clamp(3.2rem, 7.5vw, 9rem);
       line-height: clamp(1.0, 1.05, 1.1);
       /* font-size: clamp(3.2rem, 8vw, 9rem); */
       /* font-size: clamp(3.2rem, 7.5vw, 8rem); */
