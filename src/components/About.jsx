@@ -10,16 +10,18 @@ function About() {
   return (
     <section id="about">
       <div className="about-container">
-        <h1 className="about-header">About</h1>
-        <h2 className="about-name">David Chemrukov</h2>
-        <h3 className="about-title">Front-End Engineer / Graphic Designer</h3>
+      <h1 className="about-header">About</h1>
         
-        <div className="photo-wrapper">
-          <Image
-            className={"profile-photo"}
-            src={isDesktop ? profilePhotoDesktop : profilePhoto}
-            alt="Picture of David Chemrukov"
-          />
+        <div className="about-main">
+          <h2 className="about-name">David Chemrukov</h2>
+          <h3 className="about-title">Front-End Engineer / Graphic Designer</h3>
+          <div className="photo-wrapper">
+            <Image
+              className={"profile-photo"}
+              src={isDesktop ? profilePhotoDesktop : profilePhoto}
+              alt="Picture of David Chemrukov"
+            />
+          </div>
         </div>
 
         <div className="about-intro">

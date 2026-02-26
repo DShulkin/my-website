@@ -3,17 +3,15 @@
   grid-template-rows: auto;
   grid-template-areas:
     "header"
-    "name"
-    "title"
-    "photo"
+    "main"
     "intro"
     "paragraphs"
     "skills"
 }
 
 .about-header {
-  display: flex;
   grid-area: header;
+  display: flex;
   align-items: center;
   margin-bottom: 12vh;
 }
@@ -26,8 +24,11 @@
   margin-right: 3%;
 } 
 
+.about-main {
+  grid-area: main;
+}
+
 .about-name {
-  grid-area: name;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 2.6rem;
@@ -36,14 +37,12 @@
 }
 
 .about-title {
-  grid-area: title;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 8px;
 }
 
 .photo-wrapper {
-  grid-area: photo;
   margin-bottom: 8px;
 }
 
@@ -51,6 +50,10 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.about-intro {
+  grid-area: intro;
 }
 
 .skills-header {
@@ -61,25 +64,44 @@
 
 /*------------------------- nullifying the above /removing margins to compensate for grid gap ------------------------- */
 
-.about-header,
+/* .about-header,
 .about-name,
 .about-title,
 .about-intro p,
 .photo-wrapper,
 .about-paragraphs p {
   margin: 0;
-}
+} */
+
+
+
+/* .about-paragraphs {
+    display: grid;
+    gap: 20px;
+} */
+
+/* For Tablet */
+/* .about-paragraphs {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+} */
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
     .about-name {
       font-size: clamp(3.2rem, 7.5vw, 9rem);
       line-height: clamp(1.0, 1.05, 1.1);
+
+    /* font-size: clamp(3.2rem, 7.5vw, 9rem);*/
+
       /* font-size: clamp(3.2rem, 8vw, 9rem); */
       /* font-size: clamp(3.2rem, 7.5vw, 8rem); */
     }
 
     .about-title {
+    /*font-size: clamp(1.45rem, 3vw, 2.8rem);*/
+
       /* font-size: clamp(1.6rem, 3vw, 3.2rem); */
       font-size: clamp(1.55rem, 3vw, 2.8rem);
       line-height: clamp(1.0, 1.05, 1.1);
