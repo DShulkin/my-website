@@ -56,7 +56,11 @@
   grid-area: intro;
 }
 
-.skills-header {
+.about-paragraphs { 
+  grid-area: paragraphs;
+}
+
+.skills-container {
   grid-area: skills;
   border-bottom: 2px solid var(--primary-color);
 }
@@ -86,6 +90,25 @@
     gap: 40px;
     grid-template-columns: repeat(3, 1fr);
 } */
+
+
+@media (min-width: 768px) {
+  .about-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto 3rem repeat(3, auto);
+    grid-template-areas:
+      "header header header header header header"
+      "intro intro intro intro . ."
+      ". . . . . ."
+      "main main main main main main"
+      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
+      "skills skills skills skills skills skills";
+  }
+
+  .about-header {
+    margin-bottom: 0;
+  }
+}
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 375px) {
