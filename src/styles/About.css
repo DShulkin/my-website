@@ -62,8 +62,13 @@
 
 .skills-container {
   grid-area: skills;
-  border-bottom: 2px solid var(--primary-color);
+  /* border-bottom: 2px solid var(--primary-color); */
 }
+
+.skills-header {
+  font-size: clamp(1rem, 3.125vw, 1.25rem);
+  margin-bottom: 0;
+  }
 
 
 /*------------------------- nullifying the above /removing margins to compensate for grid gap ------------------------- */
@@ -94,19 +99,42 @@
 
 @media (min-width: 768px) {
   .about-container {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto 3rem repeat(3, auto);
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-rows: auto auto 3rem repeat(3, auto); */
+    /* column-gap: */
     grid-template-areas:
-      "header header header header header header"
-      "intro intro intro intro . ."
-      ". . . . . ."
-      "main main main main main main"
-      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
-      "skills skills skills skills skills skills";
+      "header header header header header header header header"
+      "intro intro intro intro intro . . ."
+      /* ". . . . . ." */
+      "main main main main main main main main"
+      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
+      "skills skills skills skills . . . .";
   }
 
   .about-header {
     margin-bottom: 0;
+  }
+
+  .about-intro {
+    margin-bottom: 6vh;
+  }
+}
+
+/*------------------------- ABOUT ------------------------- */
+@media (min-width: 1280px) {
+  .about-container {
+    grid-template-areas:
+      "header header header header header header header header"
+      "intro intro intro intro . . . ."
+      "main main main main main main main main"
+      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
+      "skills skills skills skills skills skills skills skills";
+  }
+  
+  .about-paragraphs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
 
@@ -133,6 +161,14 @@
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 1440px) {
+  .about-container {
+    grid-template-areas:
+      "header header header header header header header header"
+      "intro intro intro . . . . ."
+      "main main main main main main main main"
+      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
+      "skills skills skills skills skills skills skills skills";
+  }
  /* .about-name {
     width: max-content;
     margin-left: auto;

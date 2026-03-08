@@ -6,7 +6,7 @@ import profilePhotoDesktop from '../assets/profile-photo-desktop.jpg'
 // import profilePhoto from '../assets/profile-photo-desktop.jpg'
 
 function About() {
-  const { isDesktop } = useBreakpoint()
+  const { isMobile } = useBreakpoint()
   return (
     <section id="about">
       <div className="about-container">
@@ -18,14 +18,14 @@ function About() {
           <div className="photo-wrapper">
             <Image
               className={"profile-photo"}
-              src={isDesktop ? profilePhotoDesktop : profilePhoto}
+              src={!isMobile ? profilePhotoDesktop : profilePhoto}
               alt="Picture of David Chemrukov"
             />
           </div>
         </div>
 
         <div className="about-intro">
-          <p>I design and build digital experiences that make sense at a glance and feel effortless to use. Guided by restraint and structure, I let function lead every decision.</p>
+          <p>I create experiences that make sense at a glance and feel effortless to use. Guided by restraint and structure, function leads the process.</p>
         </div>
 
         <div className='about-paragraphs'>
