@@ -123,12 +123,13 @@
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 1280px) {
   .about-container {
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-      "header header header header header header header header"
-      "intro intro intro intro . . . ."
-      "main main main main main main main main"
-      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
-      "skills skills skills skills skills skills skills skills";
+      "header header header header header header header header header header header header"
+      "intro intro intro intro . . . . . . . ."
+      "main main main main main main main main main main main main"
+      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
+      "skills skills skills skills skills skills skills skills . . . .";
   }
   
   .about-paragraphs {
@@ -161,14 +162,6 @@
 
 /*------------------------- ABOUT ------------------------- */
 @media (min-width: 1440px) {
-  .about-container {
-    grid-template-areas:
-      "header header header header header header header header"
-      "intro intro intro . . . . ."
-      "main main main main main main main main"
-      "paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs paragraphs"
-      "skills skills skills skills skills skills skills skills";
-  }
  /* .about-name {
     width: max-content;
     margin-left: auto;
