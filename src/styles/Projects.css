@@ -39,7 +39,7 @@
 }
 
 .accordion-title {
-  transition: color .2s ease-in-out;
+  transition: color .15s ease;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.6rem;

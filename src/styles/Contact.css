@@ -100,6 +100,10 @@ textarea:focus {
       padding-top: 48px;
     } */
 
+    .contact-header {
+      margin-top: 0;
+    }
+
     .form-grid .input-group:nth-child(3) {
       width: 64%; 
     }
@@ -157,9 +161,11 @@ textarea:focus {
   }
 
   /*------------------------- CONTACT ------------------------- */
-  
+/*   
   @media (min-width: 1440px) {
       label, input, textarea, button, p {
       font-size: 1.125em;
     }
-  }
+  } */
+
+
