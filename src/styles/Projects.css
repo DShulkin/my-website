@@ -39,14 +39,15 @@
 }
 
 .accordion-title {
-  transition: color .15s ease;
   font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.008em;
   text-align: left;
   padding: 16px 0;
   width: 100%;
   margin: 0;
+  transition: color .15s ease;
 }
 
 .accordion-icon {
@@ -116,7 +117,7 @@
   flex-direction: row;
   place-self: end start;
   gap: 24px;
-  margin-bottom: 1.125rem;
+  margin: 1rem 0;
 }
 
 .icon-container .social-icon {
@@ -129,21 +130,22 @@
   fill: var(--primary-hover);
 }
 
-/*------------------------- PROJECTS ------------------------- */
-@media (min-width: 375px) {
+/*------------------------- PROJECTS. NOT NEEDED ------------------------- */
+/* @media (min-width: 375px) {
   .accordion-title {
     font-size: clamp(1.6rem, 3vw, 2.2rem);
-    line-height: clamp(1.0, 1.05, 1.1);
-    /* font-size: clamp(1.6rem, 3vw, 2.2rem); */
+    font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.008em;
   }
-}
+} */
 
 /*------------------------- PROJECTS ------------------------- */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .accordion-title {
     padding: 18px 0;
   }
-}
+} */
 
 /*------------------------- PROJECTS ------------------------- */
 @media (min-width: 1440px) {
