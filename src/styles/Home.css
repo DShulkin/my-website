@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   /* height: 88vh; */
-  height: 86vh;
+  /* height: 86vh; */
+    height: 82vh;
 }
 
 .logo {
@@ -17,7 +18,8 @@
   align-self: end;
   margin: 0;
   /* margin-bottom: 6vh; */
-  margin-bottom: 4vh;
+  /* margin-bottom: 4vh; */
+   margin-bottom: 0;
 }
 
 @keyframes fadeUp {
