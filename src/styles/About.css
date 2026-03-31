@@ -13,8 +13,8 @@
   grid-area: header;
   display: flex;
   align-items: center;
-  margin-bottom: 12vh;
-  /* margin-bottom: 2vh; */
+  /* margin-bottom: 12vh; */
+  margin-bottom: 4vh;
 }
 
 .about-header::before {
