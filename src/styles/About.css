@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 12vh;
+  /* margin-bottom: 2vh; */
 }
 
 .about-header::before {
@@ -54,10 +55,14 @@
   
 .about-intro {
   grid-area: intro;
+  margin-bottom: 20px;
+  /* margin-bottom: 12vh; */
 }
 
 .about-paragraphs { 
   grid-area: paragraphs;
+  display: grid;
+  gap: 20px;
 }
 
 .skills-container {
@@ -131,7 +136,8 @@
   }
 
   .about-header {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin: 0;
   }
 
   .about-intro {
@@ -157,7 +163,6 @@
   }
   
   .about-paragraphs {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }

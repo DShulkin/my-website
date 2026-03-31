@@ -2,20 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 82vh;
-  margin-bottom: 8vh;
+  /* height: 82vh; */
+  /* margin-bottom: 8vh; */
+  /* margin-bottom: 6vh; */
+  height: 88vh;
 }
 
 .logo {
-    z-index: 1001;
+  z-index: 1001;
 }
 
 .home-header {
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeUp 1s ease forwards;
+  animation: fadeUp 1.125s ease forwards;
   align-self: end;
-  margin: 0
+  margin: 0;
+  margin-bottom: 8vh;
 }
 
 @keyframes fadeUp {
@@ -24,6 +27,15 @@
     transform: translateY(0);
   }
 }
+
+/*
+03/26/26
+RMEOVED MARGIN 0 FROM HOME-HEADER
+ALSO REMOVED BOTTOM MARGIN FROM THE SECTION ELEMENT
+
+REMOVED JUSTIFY CONTENT SPACE BETWEEN FOR #HOME
+ADDED MARGIN-TOP 0 TO H1 TO PUSH IT DOWN
+/*
 
 /* .home-header {
   animation: slideUp .8s ease forwards;
@@ -50,7 +62,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     scroll-margin-top: 7vh;
-    /* margin-bottom: revert; */
+    margin-bottom: revert;
   }
 
   .home-header {

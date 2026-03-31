@@ -50,6 +50,11 @@
   transition: color .15s ease;
 }
 
+/* Removing padding top from the first list project item to even up the spacing between the header */
+.accordion-container .accordion-item:first-child .accordion-header .accordion-title {
+  padding-top: 0;
+}
+
 .accordion-icon {
   position: relative;
   width: 16px;
