@@ -14,7 +14,8 @@
   display: flex;
   align-items: center;
   /* margin-bottom: 12vh; */
-  margin-bottom: 4vh;
+  /* margin-bottom: 4vh; */
+   margin-bottom: 6vh;
 }
 
 .about-header::before {
