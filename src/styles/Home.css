@@ -4,7 +4,8 @@
   justify-content: space-between;
   /* height: 88vh; */
   /* height: 86vh; */
-    height: 82vh;
+    /* height: 82vh; */
+    height: 84vh;
 }
 
 .logo {
@@ -20,6 +21,7 @@
   /* margin-bottom: 6vh; */
   /* margin-bottom: 4vh; */
    margin-bottom: 0;
+   margin-bottom: 2vh;
 }
 
 @keyframes fadeUp {
