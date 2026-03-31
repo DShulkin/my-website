@@ -18,7 +18,7 @@
   animation: fadeUp 1.125s ease forwards;
   align-self: end;
   margin: 0;
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
 }
 
 @keyframes fadeUp {
@@ -28,6 +28,16 @@
   }
 }
 
+
+/*
+03/28/26
+SET #HOMETO 88VH, THIS KEEPS IT ABOVE THE NAVBAR - STILL NEED A DEPLOYMENT TEST
+SET MARGIN BOTTOM ON THE HEADER TO MAKE SURE THE TEXT IS ABOVE THE NAVBAR
+-- REMOVED BOTTOM MARGIN FROM THE SECTION
+/*
+
+
+
 /*
 03/26/26
 RMEOVED MARGIN 0 FROM HOME-HEADER
@@ -36,6 +46,10 @@ ALSO REMOVED BOTTOM MARGIN FROM THE SECTION ELEMENT
 REMOVED JUSTIFY CONTENT SPACE BETWEEN FOR #HOME
 ADDED MARGIN-TOP 0 TO H1 TO PUSH IT DOWN
 /*
+
+
+
+
 
 /* .home-header {
   animation: slideUp .8s ease forwards;
