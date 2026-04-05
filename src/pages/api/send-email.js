@@ -25,12 +25,26 @@ export default function handler(req, res) {
   const { name, email, message } = req.body 
 
   const mailOptions = {
+    from: `"davidshulkin.io Contact Form" <${process.env.EMAIL}>`,
+    to: process.env.EMAIL,
+    subject: `From ${name} (${email}) - via davidshulkin.io`,
+    text: `Name: ${name}
+    Email: ${email}
+
+    Message:
+    ${message}`,
+      replyTo: email,
+}
+
+  /*
+  const mailOptions = {
     from: email,
     to: process.env.EMAIL,
-    subject: `From ${name} - via davidshulkin.io`,
+    subject: `From ${name} ${email} - via davidshulkin.io`,
     text: message,
     replyTo: email,
   }
+  */
   
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {

@@ -20,7 +20,7 @@ footer .icon-container {
       display: grid;
       gap: 0;
       grid-template-columns: 1fr 1fr 1.25fr;
-      grid-auto-flow: row; /* Explicitly manage row layout in absolute context */
+      grid-auto-flow: row;
       position: absolute;
       left: 0;
       right: 0;

@@ -8,5 +8,9 @@ import '../styles/Contact.css'
 import '../styles/Footer.css'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return ( 
+    <main>
+      <Component {...pageProps} />
+    </main>
+  )
 }
