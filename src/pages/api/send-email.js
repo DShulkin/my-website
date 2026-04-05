@@ -27,13 +27,10 @@ export default function handler(req, res) {
   const mailOptions = {
     from: `"davidshulkin.io Contact Form" <${process.env.EMAIL}>`,
     to: process.env.EMAIL,
-    subject: `From ${name} (${email}) - via davidshulkin.io`,
-    text: `Name: ${name}
-    Email: ${email}
+    subject: `From: ${name} (${email}) - via davidshulkin.io`,
+    text: message,
+    replyTo: email,
 
-    Message:
-    ${message}`,
-      replyTo: email,
 }
 
   /*
