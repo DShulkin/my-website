@@ -3,7 +3,7 @@
     {
       "id" : 1, 
       "title": "01  /  API Employee Directory",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a sapien elit. Phasellus porta orci a nisl luctus, a pulvinar quam lobortis.",
+      "content": "An employee directory that integrates with a third-party API (Application Programming Interface). This project involves making HTTP requests to the API to retrieve employee data and presenting it on a web page.",
       "projectImage": "/projectImgs/apiDirectory_square.jpg",
       "gitHubLink": "https://github.com/DShulkin/Employee-Directory",
       "demo": "https://dshulkin.github.io/Employee-Directory/"
@@ -11,7 +11,7 @@
     {
       "id": 2, 
       "title": "02  /  Interactive Photo Gallery",
-      "content": "Aliquam erat volutpat. Nam quis mi non nisi sollicitudin volutpat sit amet non nisi. Donec venenatis, lectus vel rutrum aliquet, nisl ante aliquam magna.",
+      "content": "A responsive photo gallery that combines structured front-end layout with interactive browsing features. Built with HTML, CSS Grid, and JavaScript, the project uses live search filtering and lightbox functionality to create a more seamless, user-friendly way to explore image content.",
       "projectImage": "/projectImgs/photoGallery_square_dark.jpg",
       "gitHubLink": "https://github.com/DShulkin/Interactive-Photo-Gallery",
       "demo": "https://dshulkin.github.io/Interactive-Photo-Gallery/"
@@ -19,7 +19,7 @@
     {
       "id": 3, 
       "title": "03  /  Game Show Application",
-      "content": "Curabitur id urna vitae magna euismod fermentum. Vestibulum eu erat at massa efficitur vestibulum. Quisque fringilla consequat facilisis.",
+      "content": "This project showcases a dynamic phrase guessing game that uses JavaScript to manage game state, user interaction, and win-loss logic. Random phrase generation, interactive keyboard input, letter matching, and scoreboard tracking work together to create a responsive and engaging gameplay experience within the browser.",
       "projectImage": "/projectImgs/gameShow_square.jpg",
       "gitHubLink": "https://github.com/DShulkin/Game-Show-App",
       "demo": "https://dshulkin.github.io/Game-Show-App/"
@@ -27,7 +27,7 @@
     {
       "id": 4, 
       "title": "04  /  Tic Tac Toe Game",
-      "content": "Sed id arcu varius, sollicitudin arcu non, feugiat mi. Maecenas vitae sem at justo tempus dapibus. Nam tincidunt libero at malesuada finibus.",
+      "content": "A Tic-Tac-Toe game built with React, focusing on component-based design, state-driven rendering, and user interaction. Game logic, move tracking, and real-time interface updates work together to demonstrate the fundamentals of building interactive applications with React.",
       "projectImage": "/projectImgs/TTT_square.jpg",
       "gitHubLink": "https://github.com/DShulkin/TicTacToe",
       "demo": "https://dshulkin.github.io/TicTacToe/"
@@ -35,7 +35,7 @@
     {
       "id": 5, 
       "title": "05  /  Bootstrap Site",
-      "content": "Proin nec dui molestie, dignissim lorem non, ultrices enim. Nulla facilisi. Quisque vitae purus consequat, pretium sapien eget, finibus odio.",
+      "content": "A front-end styling project that applies Sass to create a more modular and maintainable CSS architecture. Variables, mixins, partials, and component-based organization work together to improve consistency, simplify updates, and support a more efficient responsive design workflow.",
       "projectImage": "/projectImgs/bootstrap_square.jpg",
       "gitHubLink": "https://github.com/DShulkin/BoostrapSite",
       "demo": "https://dshulkin.github.io/BootStrapSite/"
